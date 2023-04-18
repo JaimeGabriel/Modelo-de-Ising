@@ -17,6 +17,7 @@
 - promedio del valor absoluto de la magnetización
 - Revisar promedios pag 78 fig 3.7 newman
 - escalado finito -> cap 8 newman
+- usar variable global
 
 ----
 Teoría:

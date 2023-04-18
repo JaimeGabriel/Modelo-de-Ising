@@ -67,6 +67,13 @@ def Representación_T(data):
     plt.savefig('./Graphics/Graph3_7.pdf', bbox_inches = 'tight')
     plt.close()
 
+    plt.plot(temp, Sus_vec, alpha = 1, lw = 3, label = 'Susceptibilidad', color = 'purple')
+    plt.title("Susceptibilidad")
+    plt.ylabel("Susceptibilidad")
+    plt.xlabel("Temperatura")
+    plt.savefig('./Graphics/Sus.pdf', bbox_inches = 'tight')
+    plt.close()
+
 # def ReadRepresentación():
 #     # Load data from CSV into NumPy arrays
 #     data = np.loadtxt('./Data/Medidas.csv', delimiter=',')
