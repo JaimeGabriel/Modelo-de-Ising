@@ -203,12 +203,14 @@ def Loop_Temp(N, N_calentar, N_med, N_mover, temp_i,temp_f, loop_T, B, pintar_in
         pintar(red, N, "final")
         #   Llamamos a la función que calcula los promedios de las cantidades necesarias
         T_Prom[l] = [temp] + promedios(N, beta, Medidas)
-        
 
     # Fin loop temperaturas
     #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+    #Guarda todos los datos de la función promedios
     np.savetxt('Data/Promedios(T).csv', T_Prom, delimiter=',',header='T Magnetizacion Magnetization_Absoluta Magnetization_cuadrada Susceptibilidad Energia Energia_cuadrada Capacidad_calorifica')
+    #Guarda los datos de T y Sus con diferente nombre segun su N y N_med
+    np.savetxt('Data/GraphSUS_N-'+ str(N) +'_Nmed-'+ str(N_med) +'.csv', T_Prom[:,[0,4]], delimiter=',',header='T Susceptibilidad')
 
     #---------------------------------------------------------------------------------------------------------------------
     #---------------------------------------------------------------------------------------------------------------------

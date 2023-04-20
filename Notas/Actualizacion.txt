@@ -8,16 +8,17 @@
 + Poner J = 1 
 + cambiar el menos que nos dijo antonio
 + meter todas las medidas en la misma función
++ Representar magnetización frente a temperatura. T de 10 a 0.2
++ Revisar promedios pag 78 fig 3.7 newman
++ promedio del valor absoluto de la magnetización
++ multiplicar la energía solo por el de la derecha y el de arriba
 
 ---------------------------------------------------------------------------------------------------------------------
 
 - Una funcion que mida la hora para saludar correctamente al usuario
-- Representar magnetización frente a temperatura. T de 10 a 0.2
-- multiplicar la energía solo por el de la derecha y el de arriba
-- promedio del valor absoluto de la magnetización
-- Revisar promedios pag 78 fig 3.7 newman
 - escalado finito -> cap 8 newman
 - usar variable global
+- Calcular automaticamente las temperaturas incial y final a partir de las de la gráfica escalada
 
 ----
 Teoría:

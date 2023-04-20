@@ -38,7 +38,7 @@ def promedios(N, beta, data):
     prom_m = np.mean(M_vec)
     prom_mabs = np.mean(Mabs_vec)
     prom_m2 = np.mean(M2_vec)
-    sus = beta * N**2 * (prom_m2 - prom_m**2)
+    sus = beta * N**2 * (prom_m2 - prom_mabs**2)
     prom_E = np.mean(E_vec)
     prom_E2 = np.mean(E2_vec)
     cap_cal = (beta / N)**2 * (prom_E2 - prom_E**2)
