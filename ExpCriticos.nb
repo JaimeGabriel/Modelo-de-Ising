@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     10680,        273]
-NotebookOptionsPosition[     10099,        255]
-NotebookOutlinePosition[     10505,        271]
-CellTagsIndexPosition[     10462,        268]
+NotebookDataLength[     27320,        637]
+NotebookOptionsPosition[     25220,        603]
+NotebookOutlinePosition[     25619,        619]
+CellTagsIndexPosition[     25576,        616]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -22,198 +22,317 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"SetDirectory", "[", 
    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}]], "Input",
- CellChangeTimes->{{3.89098251088988*^9, 3.890982544127984*^9}},
- CellLabel->"In[31]:=",ExpressionUUID->"b4647481-1b41-4abe-8725-00d91634bf00"],
+ CellLabel->
+  "In[199]:=",ExpressionUUID->"3936d86a-5c80-4a51-965c-f2ae76e0ee09"],
 
 Cell[CellGroupData[{
 
-Cell[BoxData[
+Cell[BoxData[{
  RowBox[{
+  RowBox[{
+   RowBox[{"SetDirectory", "[", 
+    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], "\n", 
   RowBox[{"(*", 
    RowBox[{
    "IMPORTAR", " ", "ARCHIVOS", " ", "Y", " ", "EXTRAER", " ", "T", " ", "Y", 
-    " ", "SUS"}], "*)"}], "\[IndentingNewLine]", 
+    " ", "SUS"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL10", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{
+    "\"\<Data\\\\Promedios-N-10_Nmed-300.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL20", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{
+    "\"\<Data\\\\Promedios-N-20_Nmed-300.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL30", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{
+    "\"\<Data\\\\Promedios-N-30_Nmed-300.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL40", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{
+    "\"\<Data\\\\Promedios-N-40_Nmed-300.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL50", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{
+    "\"\<Data\\\\Promedios-N-50_Nmed-300.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T10", "=", 
+   RowBox[{"DataL10", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sus10", " ", "=", " ", 
+   RowBox[{"DataL10", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T20", "=", 
+   RowBox[{"DataL20", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sus20", " ", "=", " ", 
+   RowBox[{"DataL20", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T30", "=", 
+   RowBox[{"DataL30", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sus30", " ", "=", " ", 
+   RowBox[{"DataL30", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T40", "=", 
+   RowBox[{"DataL40", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sus40", " ", "=", " ", 
+   RowBox[{"DataL40", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T50", "=", 
+   RowBox[{"DataL50", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Sus50", " ", "=", " ", 
+    RowBox[{"DataL50", "[", 
+     RowBox[{"[", 
+      RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"FUNCIONES", " ", "DE", " ", "ESCALADO"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"EscT", "[", 
+    RowBox[{"TC_", ",", "\[Nu]_", ",", "\[Gamma]_", ",", "T_", ",", "L_"}], 
+    "]"}], ":=", 
+   RowBox[{
+    SuperscriptBox["L", 
+     FractionBox["1", "\[Nu]"]], " ", 
+    FractionBox[
+     RowBox[{"T", "-", "TC"}], "TC"]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{
    RowBox[{
-    RowBox[{"DataL10", "=", 
-     RowBox[{"Import", "[", 
-      RowBox[{
-      "\"\<Data/GraphSUS_N-10_Nmed-1000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
-       RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
-       RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"DataL20", "=", 
-     RowBox[{"Import", "[", 
-      RowBox[{
-      "\"\<Data/GraphSUS_N-20_Nmed-1000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
-       RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
-       RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"DataL50", "=", 
-     RowBox[{"Import", "[", 
-      RowBox[{
-      "\"\<Data/GraphSUS_N-30_Nmed-1000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
-       RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
-       RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"T10", "=", 
-     RowBox[{"DataL10", "[", 
-      RowBox[{"[", 
-       RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"Sus10", " ", "=", " ", 
-     RowBox[{"DataL10", "[", 
-      RowBox[{"[", 
-       RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"T20", "=", 
-     RowBox[{"DataL20", "[", 
-      RowBox[{"[", 
-       RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"Sus20", " ", "=", " ", 
-     RowBox[{"DataL20", "[", 
-      RowBox[{"[", 
-       RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"T50", "=", 
-     RowBox[{"DataL50", "[", 
-      RowBox[{"[", 
-       RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"Sus50", " ", "=", " ", 
-     RowBox[{"DataL50", "[", 
-      RowBox[{"[", 
-       RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{"(*", 
-    RowBox[{"FUNCIONES", " ", "DE", " ", "ESCALADO"}], "*)"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{
+    RowBox[{"EscSus", "[", 
+     RowBox[{"\[Nu]_", ",", "\[Gamma]_", ",", "Sus_", ",", "L_"}], "]"}], ":=", 
     RowBox[{
-     RowBox[{"EscT", "[", 
-      RowBox[{"TC_", ",", "\[Nu]_", ",", "\[Gamma]_", ",", "T_", ",", "L_"}], 
-      "]"}], ":=", 
-     RowBox[{
-      SuperscriptBox["L", 
-       FractionBox["1", "\[Nu]"]], " ", 
+     SuperscriptBox["L", 
       FractionBox[
-       RowBox[{"T", "-", "TC"}], "TC"]}]}], ";"}], "\[IndentingNewLine]", 
+       RowBox[{"-", "\[Gamma]"}], "\[Nu]"]], " ", "Sus"}]}], ";"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
    RowBox[{
-    RowBox[{
-     RowBox[{"EscSus", "[", 
-      RowBox[{"\[Nu]_", ",", "\[Gamma]_", ",", "Sus_", ",", "L_"}], "]"}], ":=", 
+   "FUNCI\[CapitalOAcute]N", " ", "QUE", " ", "CREA", " ", "UN", " ", 
+    "VECTOR", " ", "DE", " ", "N", " ", "VECTORES", " ", "DE", " ", "2", " ", 
+    "COMPONENTES", " ", 
+    RowBox[{"(", 
+     RowBox[{"T", " ", "ESCALADA", " ", "y", " ", "SUS", " ", "ESCALDA"}], 
+     ")"}], " ", "PARA", " ", "REPRESENTARLOS"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"Graphic", "[", 
      RowBox[{
-      SuperscriptBox["L", 
-       FractionBox[
-        RowBox[{"-", "\[Gamma]"}], "\[Nu]"]], " ", "Sus"}]}], ";"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{"(*", 
-    RowBox[{
-    "FUNCI\[CapitalOAcute]N", " ", "QUE", " ", "CREA", " ", "UN", " ", 
-     "VECTOR", " ", "DE", " ", "N", " ", "VECTORES", " ", "DE", " ", "2", " ",
-      "COMPONENTES", " ", 
-     RowBox[{"(", 
-      RowBox[{"T", " ", "ESCALADA", " ", "y", " ", "SUS", " ", "ESCALDA"}], 
-      ")"}], " ", "PARA", " ", "REPRESENTARLOS"}], "*)"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{
-     RowBox[{"Graphic", "[", 
+     "TC_", ",", "\[Nu]_", ",", "\[Gamma]_", ",", "T_", ",", "Sus_", ",", 
+      "L_"}], "]"}], ":=", 
+    RowBox[{"Transpose", "[", 
+     RowBox[{"{", 
       RowBox[{
-      "TC_", ",", "\[Nu]_", ",", "\[Gamma]_", ",", "T_", ",", "Sus_", ",", 
-       "L_"}], "]"}], ":=", 
-     RowBox[{"Transpose", "[", 
+       RowBox[{"EscT", "[", 
+        RowBox[{"TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T", ",", "L"}], 
+        "]"}], ",", 
+       RowBox[{"EscSus", "[", 
+        RowBox[{"\[Nu]", ",", "\[Gamma]", ",", "Sus", ",", "L"}], "]"}]}], 
+      "}"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "CREACI\[CapitalOAcute]N", " ", "DE", " ", "LA", " ", 
+    "GR\[CapitalAAcute]FICA"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"ListPlot", "[", 
+    RowBox[{
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Graphic", "[", 
+        RowBox[{
+        "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T10", ",", "Sus10", ",", 
+         "10"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Graphic", "[", 
+        RowBox[{
+        "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T20", ",", "Sus20", ",", 
+         "20"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Graphic", "[", 
+        RowBox[{
+        "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T30", ",", "Sus30", ",", 
+         "30"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Graphic", "[", 
+        RowBox[{
+        "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T40", ",", "Sus40", ",", 
+         "40"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Graphic", "[", 
+        RowBox[{
+        "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T50", ",", "Sus50", ",", 
+         "50"}], "]"}]}], "\[IndentingNewLine]", "}"}], ",", 
+     RowBox[{"PlotRange", "->", 
       RowBox[{"{", 
        RowBox[{
-        RowBox[{"EscT", "[", 
-         RowBox[{"TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T", ",", "L"}], 
-         "]"}], ",", 
-        RowBox[{"EscSus", "[", 
-         RowBox[{"\[Nu]", ",", "\[Gamma]", ",", "Sus", ",", "L"}], "]"}]}], 
-       "}"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
-   RowBox[{"(*", 
-    RowBox[{
-    "CREACI\[CapitalOAcute]N", " ", "DE", " ", "LA", " ", 
-     "GR\[CapitalAAcute]FICA"}], "*)"}], "\[IndentingNewLine]", 
-   RowBox[{"Manipulate", "[", 
-    RowBox[{
-     RowBox[{"ListPlot", "[", 
-      RowBox[{
-       RowBox[{"{", "\[IndentingNewLine]", 
-        RowBox[{
-         RowBox[{"Graphic", "[", 
-          RowBox[{
-          "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T10", ",", "Sus10", ",", 
-           "10"}], "]"}], ",", "\[IndentingNewLine]", 
-         RowBox[{"Graphic", "[", 
-          RowBox[{
-          "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T20", ",", "Sus20", ",", 
-           "20"}], "]"}], ",", "\[IndentingNewLine]", 
-         RowBox[{"Graphic", "[", 
-          RowBox[{
-          "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T50", ",", "Sus50", ",", 
-           "50"}], "]"}]}], "\[IndentingNewLine]", "}"}], ",", 
-       RowBox[{"PlotRange", "->", 
         RowBox[{"{", 
          RowBox[{
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"-", "4"}], ",", "6"}], "}"}], ",", "All"}], "}"}]}], ",", 
-       RowBox[{"Joined", "->", "True"}]}], "]"}], "\[IndentingNewLine]", ",", 
-     RowBox[{"\"\<\!\(\*SubscriptBox[\(T\), \(c\)]\)\>\"", "->", 
-      RowBox[{"{", 
-       RowBox[{"TC", ",", "2", ",", "3"}], "}"}]}], ",", 
-     RowBox[{"\"\<\[Nu]\>\"", "->", 
-      RowBox[{"{", 
-       RowBox[{"\[Nu]", ",", "0.7", ",", "1.2"}], "}"}]}], ",", 
-     RowBox[{"\"\<\[Gamma]\>\"", "->", 
-      RowBox[{"{", 
-       RowBox[{"\[Gamma]", ",", "1.1", ",", "1.8"}], "}"}]}]}], 
-    "]"}]}]}]], "Input",
- CellChangeTimes->CompressedData["
-1:eJxTTMoPSmViYGCQAGIQ/V3M/K7r3zeO4U97wfQUe0VGNyBdk5nHAaIjtJj1
-QPQp/Qp9EP3xiIMniF5WnxgEolXutoeBaK8zHBVgWtemBURfKDSdAKI7Lk9Z
-CaILfeaC6VOsfBtAdJHvr5Mg+lXWk7Mg+uVljhcgemOI4ScQPYnHEkxr8PJ+
-B9HX53OyugPpZ0XZV6OBNNu1uUwxQPqBwA9JEL2CjUkWRO/valAC0Ycyj2iB
-aJvsYn0QfW9+kCGIzvA7aAqidzj/AtMPrvHag+ioJgZnEH2sd1sEiJbeyh4J
-oq046o6UAmk7o+UnQHRZe+05EP3mdtNVED1la85tEP2to+4OiJ7m7fsCRF/S
-XwCmNR59/gDm37j8A0TvbbL5B6IVahYylAFpACuD2QU=
-  "],
- CellLabel->
-  "In[110]:=",ExpressionUUID->"d2375fd9-c1b9-4967-bde8-d799df438b88"],
-
-Cell[BoxData[
+          RowBox[{"-", "4"}], ",", "6"}], "}"}], ",", "All"}], "}"}]}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", "Thick"}]}], "]"}], 
+   "\[IndentingNewLine]", ",", 
+   RowBox[{"\"\<\!\(\*SubscriptBox[\(T\), \(c\)]\)\>\"", "->", 
+    RowBox[{"{", 
+     RowBox[{"TC", ",", "2", ",", "3"}], "}"}]}], ",", 
+   RowBox[{"\"\<\[Nu]\>\"", "->", 
+    RowBox[{"{", 
+     RowBox[{"\[Nu]", ",", "0.7", ",", "1.2"}], "}"}]}], ",", 
+   RowBox[{"\"\<\[Gamma]\>\"", "->", 
+    RowBox[{"{", 
+     RowBox[{"\[Gamma]", ",", "1.1", ",", "1.8"}], "}"}]}]}], "]"}], "\n", 
+ TemplateBox[{
+  "Import", "nffil", 
+   "\"File \\!\\(\\*RowBox[{\\\"\\\\\\\"Data/GraphSUS_N-10_Nmed-30.csv\\\\\\\"\
+\\\"}]\\) not found during \\!\\(\\*RowBox[{\\\"Import\\\"}]\\).\"", 2, 35, 2,
+    23802641780713578904, "Local"},
+  "MessageTemplate"], "\n", 
+ TemplateBox[{
+  "Import", "nffil", 
+   "\"File \\!\\(\\*RowBox[{\\\"\\\\\\\"Data/GraphSUS_N-20_Nmed-30.csv\\\\\\\"\
+\\\"}]\\) not found during \\!\\(\\*RowBox[{\\\"Import\\\"}]\\).\"", 2, 36, 3,
+    23802641780713578904, "Local"},
+  "MessageTemplate"], "\n", 
+ TemplateBox[{
+  "Import", "nffil", 
+   "\"File \\!\\(\\*RowBox[{\\\"\\\\\\\"Data/GraphSUS_N-30_Nmed-30.csv\\\\\\\"\
+\\\"}]\\) not found during \\!\\(\\*RowBox[{\\\"Import\\\"}]\\).\"", 2, 37, 4,
+    23802641780713578904, "Local"},
+  "MessageTemplate"], "\n", 
+ TemplateBox[{
+  "Import", "nffil", 
+   "\"File \\!\\(\\*RowBox[{\\\"\\\\\\\"Data/GraphSUS_N-40_Nmed-30.csv\\\\\\\"\
+\\\"}]\\) not found during \\!\\(\\*RowBox[{\\\"Import\\\"}]\\).\"", 2, 38, 5,
+    23802641780713578904, "Local"},
+  "MessageTemplate"], "\n", 
+ TemplateBox[{
+  "Import", "nffil", 
+   "\"File \\!\\(\\*RowBox[{\\\"\\\\\\\"Data/GraphSUS_N-50_Nmed-30.csv\\\\\\\"\
+\\\"}]\\) not found during \\!\\(\\*RowBox[{\\\"Import\\\"}]\\).\"", 2, 39, 6,
+    23802641780713578904, "Local"},
+  "MessageTemplate"], "\n", 
+ TemplateBox[{
+  "Symbol", "argx", 
+   "\"\\!\\(\\*RowBox[{\\\"Symbol\\\"}]\\) called with \\!\\(\\*RowBox[{\\\"0\
+\\\"}]\\) arguments; 1 argument is expected.\"", 2, 40, 7, 
+   23802641780713578904, "Local"},
+  "MessageTemplate"], "\n", 
+ TemplateBox[{
+  "Symbol", "argx", 
+   "\"\\!\\(\\*RowBox[{\\\"Symbol\\\"}]\\) called with \\!\\(\\*RowBox[{\\\"0\
+\\\"}]\\) arguments; 1 argument is expected.\"", 2, 41, 8, 
+   23802641780713578904, "Local"},
+  "MessageTemplate"], "\n", 
+ TemplateBox[{
+  "Symbol", "argx", 
+   "\"\\!\\(\\*RowBox[{\\\"Symbol\\\"}]\\) called with \\!\\(\\*RowBox[{\\\"0\
+\\\"}]\\) arguments; 1 argument is expected.\"", 2, 42, 9, 
+   23802641780713578904, "Local"},
+  "MessageTemplate"], "\n", 
+ TemplateBox[{
+  "Symbol", "argx", 
+   "\"\\!\\(\\*RowBox[{\\\"Symbol\\\"}]\\) called with \\!\\(\\*RowBox[{\\\"0\
+\\\"}]\\) arguments; 1 argument is expected.\"", 2, 43, 10, 
+   23802641780713578904, "Local"},
+  "MessageTemplate"], "\n", 
+ TemplateBox[{
+  "Symbol", "argx", 
+   "\"\\!\\(\\*RowBox[{\\\"Symbol\\\"}]\\) called with \\!\\(\\*RowBox[{\\\"0\
+\\\"}]\\) arguments; 1 argument is expected.\"", 2, 44, 11, 
+   23802641780713578904, "Local"},
+  "MessageTemplate"], "\n", 
+ TemplateBox[{
+  "Symbol", "argx", 
+   "\"\\!\\(\\*RowBox[{\\\"Symbol\\\"}]\\) called with \\!\\(\\*RowBox[{\\\"0\
+\\\"}]\\) arguments; 1 argument is expected.\"", 2, 45, 12, 
+   23802641780713578904, "Local"},
+  "MessageTemplate"], "\n", 
+ TemplateBox[{
+  "Symbol", "argx", 
+   "\"\\!\\(\\*RowBox[{\\\"Symbol\\\"}]\\) called with \\!\\(\\*RowBox[{\\\"0\
+\\\"}]\\) arguments; 1 argument is expected.\"", 2, 46, 13, 
+   23802641780713578904, "Local"},
+  "MessageTemplate"], "\n", 
+ TemplateBox[{
+  "Symbol", "argx", 
+   "\"\\!\\(\\*RowBox[{\\\"Symbol\\\"}]\\) called with \\!\\(\\*RowBox[{\\\"0\
+\\\"}]\\) arguments; 1 argument is expected.\"", 2, 47, 14, 
+   23802641780713578904, "Local"},
+  "MessageTemplate"], "\n", 
+ TemplateBox[{
+  "Symbol", "argx", 
+   "\"\\!\\(\\*RowBox[{\\\"Symbol\\\"}]\\) called with \\!\\(\\*RowBox[{\\\"0\
+\\\"}]\\) arguments; 1 argument is expected.\"", 2, 48, 15, 
+   23802641780713578904, "Local"},
+  "MessageTemplate"], "\n", 
+ TemplateBox[{
+  "Symbol", "argx", 
+   "\"\\!\\(\\*RowBox[{\\\"Symbol\\\"}]\\) called with \\!\\(\\*RowBox[{\\\"0\
+\\\"}]\\) arguments; 1 argument is expected.\"", 2, 49, 16, 
+   23802641780713578904, "Local"},
+  "MessageTemplate"], "\n", 
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`TC$$ = 
-    2.2640000000000002`, $CellContext`\[Gamma]$$ = 
-    1.5020000000000002`, $CellContext`\[Nu]$$ = 1.2, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`TC$$ = 2, $CellContext`\[Gamma]$$ = 
+    1.1, $CellContext`\[Nu]$$ = 0.7, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
       Hold[$CellContext`TC$$], 2, 3}, {
       Hold[$CellContext`\[Nu]$$], 0.7, 1.2}, {
       Hold[$CellContext`\[Gamma]$$], 1.1, 1.8}}, Typeset`size$$ = {
-    360., {111., 116.5772815302204}}, Typeset`update$$ = 0, 
+    360., {107., 111.2504145161389}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`TC$52173$$ = False, $CellContext`\[Nu]$52174$$ = 
-    0, $CellContext`\[Gamma]$52175$$ = 0}, 
+    True, $CellContext`TC$29221$$ = False, $CellContext`\[Nu]$29222$$ = 
+    0, $CellContext`\[Gamma]$29223$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`TC$$ = 2, $CellContext`\[Gamma]$$ = 
         1.1, $CellContext`\[Nu]$$ = 0.7}, "ControllerVariables" :> {
-        Hold[$CellContext`TC$$, $CellContext`TC$52173$$, False], 
-        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$52174$$, 0], 
-        Hold[$CellContext`\[Gamma]$$, $CellContext`\[Gamma]$52175$$, 0]}, 
+        Hold[$CellContext`TC$$, $CellContext`TC$29221$$, False], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$29222$$, 0], 
+        Hold[$CellContext`\[Gamma]$$, $CellContext`\[Gamma]$29223$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -224,14 +343,78 @@ $CellContext`\[Gamma]$$, $CellContext`T10, $CellContext`Sus10, 10],
          $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
 $CellContext`\[Gamma]$$, $CellContext`T20, $CellContext`Sus20, 20], 
          $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T30, $CellContext`Sus30, 30], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T40, $CellContext`Sus40, 40], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
 $CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]}, 
-        PlotRange -> {{-4, 6}, All}, Joined -> True], 
+        PlotRange -> {{-4, 6}, All}, PlotStyle -> Thick], 
       "Specifications" :> {
        "\!\(\*SubscriptBox[\(T\), \(c\)]\)" -> {$CellContext`TC$$, 2, 3}, 
         "\[Nu]" -> {$CellContext`\[Nu]$$, 0.7, 1.2}, 
         "\[Gamma]" -> {$CellContext`\[Gamma]$$, 1.1, 1.8}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{633., {141.63403328722342`, 147.36596671277658`}},
+     ImageSizeCache->{638., {137.13403309800196`, 142.86596690199804`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]}], "Input",
+ CellChangeTimes->{{3.89098251088988*^9, 3.890982544127984*^9}, 
+   3.8915976099114*^9, {3.89159765242514*^9, 3.8915976808659377`*^9}, 
+   3.891597741461873*^9, {3.8915984940317793`*^9, 
+   3.891598602367837*^9}},ExpressionUUID->"b4647481-1b41-4abe-8725-\
+00d91634bf00"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`TC$$ = 2.06, $CellContext`\[Gamma]$$ = 
+    1.609, $CellContext`\[Nu]$$ = 1.1320000000000001`, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
+      Hold[$CellContext`TC$$], 2, 3}, {
+      Hold[$CellContext`\[Nu]$$], 0.7, 1.2}, {
+      Hold[$CellContext`\[Gamma]$$], 1.1, 1.8}}, Typeset`size$$ = {
+    360., {108., 113.29693094015659`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`TC$33480$$ = False, $CellContext`\[Nu]$33481$$ = 
+    0, $CellContext`\[Gamma]$33482$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`TC$$ = 2, $CellContext`\[Gamma]$$ = 
+        1.1, $CellContext`\[Nu]$$ = 0.7}, "ControllerVariables" :> {
+        Hold[$CellContext`TC$$, $CellContext`TC$33480$$, False], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$33481$$, 0], 
+        Hold[$CellContext`\[Gamma]$$, $CellContext`\[Gamma]$33482$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ListPlot[{
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T10, $CellContext`Sus10, 10], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T20, $CellContext`Sus20, 20], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T30, $CellContext`Sus30, 30], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T40, $CellContext`Sus40, 40], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]}, 
+        PlotRange -> {{-4, 6}, All}, PlotStyle -> Thick], 
+      "Specifications" :> {
+       "\!\(\*SubscriptBox[\(T\), \(c\)]\)" -> {$CellContext`TC$$, 2, 3}, 
+        "\[Nu]" -> {$CellContext`\[Nu]$$, 0.7, 1.2}, 
+        "\[Gamma]" -> {$CellContext`\[Gamma]$$, 1.1, 1.8}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{638., {139.13403309800196`, 144.86596690199804`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -242,20 +425,185 @@ $CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]},
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{{3.8908861423175325`*^9, 3.890886156076614*^9}, {
-   3.8908863678678355`*^9, 3.890886378730595*^9}, {3.890886445438064*^9, 
-   3.8908864661743107`*^9}, 3.8908865487334557`*^9, 3.890886697632903*^9, 
-   3.8909242680922127`*^9, 3.8909301272959485`*^9, 3.890930267376189*^9, 
-   3.890930379540761*^9, 3.890982450975521*^9, {3.890982699542572*^9, 
-   3.8909827281715536`*^9}, {3.890982805888688*^9, 3.890982855183172*^9}, {
-   3.8909828992549086`*^9, 3.8909829363489037`*^9}},
+ CellChangeTimes->{
+  3.8915976122611423`*^9, 3.8915976841620407`*^9, {3.8915977574018383`*^9, 
+   3.8915977872596188`*^9}},
  CellLabel->
-  "Out[122]=",ExpressionUUID->"95988da2-07e2-4b5d-aa3f-cfc07de92d43"]
+  "Out[182]=",ExpressionUUID->"91732344-02d7-4d47-9f3a-ed737cc024da"],
+
+Cell[BoxData["\<\"File `1` not found during `2`.\"\>"], "Output",
+ CellChangeTimes->{3.8915976122611423`*^9, 3.8915976841620407`*^9, 
+  3.8915977574018383`*^9, 3.8915977877521534`*^9},
+ CellLabel->
+  "Out[183]=",ExpressionUUID->"fa027269-d3ee-4fb0-92f9-caca46f1c298"],
+
+Cell[BoxData["\<\"File `1` not found during `2`.\"\>"], "Output",
+ CellChangeTimes->{3.8915976122611423`*^9, 3.8915976841620407`*^9, 
+  3.8915977574018383`*^9, 3.891597787761855*^9},
+ CellLabel->
+  "Out[184]=",ExpressionUUID->"059ee62e-523e-4066-87ac-5a8429143a0a"],
+
+Cell[BoxData["\<\"File `1` not found during `2`.\"\>"], "Output",
+ CellChangeTimes->{3.8915976122611423`*^9, 3.8915976841620407`*^9, 
+  3.8915977574018383`*^9, 3.891597787766801*^9},
+ CellLabel->
+  "Out[185]=",ExpressionUUID->"904cb1d0-6b20-4343-882f-0c98e553f1a3"],
+
+Cell[BoxData["\<\"File `1` not found during `2`.\"\>"], "Output",
+ CellChangeTimes->{3.8915976122611423`*^9, 3.8915976841620407`*^9, 
+  3.8915977574018383`*^9, 3.89159778778047*^9},
+ CellLabel->
+  "Out[186]=",ExpressionUUID->"46c1a37a-b18f-4b42-bff0-3a4afc11a255"],
+
+Cell[BoxData["\<\"File `1` not found during `2`.\"\>"], "Output",
+ CellChangeTimes->{3.8915976122611423`*^9, 3.8915976841620407`*^9, 
+  3.8915977574018383`*^9, 3.8915977877909775`*^9},
+ CellLabel->
+  "Out[187]=",ExpressionUUID->"3890cdf6-d66b-48a0-b556-1f428d1f49d1"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Symbol", "::", "argx"}], "MessageName"]], "Output",
+ CellChangeTimes->{3.8915976122611423`*^9, 3.8915976841620407`*^9, 
+  3.8915977574018383`*^9, 3.891597787800951*^9},
+ CellLabel->
+  "Out[188]=",ExpressionUUID->"5f950f8a-c5c8-4ade-8f64-459370893c2d"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Symbol", "::", "argx"}], "MessageName"]], "Output",
+ CellChangeTimes->{3.8915976122611423`*^9, 3.8915976841620407`*^9, 
+  3.8915977574018383`*^9, 3.8915977878119354`*^9},
+ CellLabel->
+  "Out[189]=",ExpressionUUID->"2d60e740-4e6d-4238-895d-6fcbdfd43cd5"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Symbol", "::", "argx"}], "MessageName"]], "Output",
+ CellChangeTimes->{3.8915976122611423`*^9, 3.8915976841620407`*^9, 
+  3.8915977574018383`*^9, 3.8915977878206234`*^9},
+ CellLabel->
+  "Out[190]=",ExpressionUUID->"708eae1a-b807-4d12-bc94-4e603c90bf35"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Symbol", "::", "argx"}], "MessageName"]], "Output",
+ CellChangeTimes->{3.8915976122611423`*^9, 3.8915976841620407`*^9, 
+  3.8915977574018383`*^9, 3.8915977878274236`*^9},
+ CellLabel->
+  "Out[191]=",ExpressionUUID->"14bdea8b-0431-4f73-9264-77abcd1b0a86"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Symbol", "::", "argx"}], "MessageName"]], "Output",
+ CellChangeTimes->{3.8915976122611423`*^9, 3.8915976841620407`*^9, 
+  3.8915977574018383`*^9, 3.8915977878400097`*^9},
+ CellLabel->
+  "Out[192]=",ExpressionUUID->"e7324bd9-9558-4677-ac65-c7a3e071ccc2"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Symbol", "::", "argx"}], "MessageName"]], "Output",
+ CellChangeTimes->{3.8915976122611423`*^9, 3.8915976841620407`*^9, 
+  3.8915977574018383`*^9, 3.891597787849454*^9},
+ CellLabel->
+  "Out[193]=",ExpressionUUID->"87f7f59f-e972-43d8-98d0-14429a2653eb"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Symbol", "::", "argx"}], "MessageName"]], "Output",
+ CellChangeTimes->{3.8915976122611423`*^9, 3.8915976841620407`*^9, 
+  3.8915977574018383`*^9, 3.891597787858276*^9},
+ CellLabel->
+  "Out[194]=",ExpressionUUID->"415d31b6-c726-4555-907c-baebac2ea928"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Symbol", "::", "argx"}], "MessageName"]], "Output",
+ CellChangeTimes->{3.8915976122611423`*^9, 3.8915976841620407`*^9, 
+  3.8915977574018383`*^9, 3.891597787866701*^9},
+ CellLabel->
+  "Out[195]=",ExpressionUUID->"b13eac36-19cd-4640-b95f-5a0de2e0b481"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Symbol", "::", "argx"}], "MessageName"]], "Output",
+ CellChangeTimes->{3.8915976122611423`*^9, 3.8915976841620407`*^9, 
+  3.8915977574018383`*^9, 3.891597787870448*^9},
+ CellLabel->
+  "Out[196]=",ExpressionUUID->"db1fbf6b-b5be-4643-9a70-c51b3dbcb8a0"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Symbol", "::", "argx"}], "MessageName"]], "Output",
+ CellChangeTimes->{3.8915976122611423`*^9, 3.8915976841620407`*^9, 
+  3.8915977574018383`*^9, 3.8915977878770037`*^9},
+ CellLabel->
+  "Out[197]=",ExpressionUUID->"9da0935a-6c13-4e9d-bacd-6204e7a6472f"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`TC$$ = 2, $CellContext`\[Gamma]$$ = 
+    1.1, $CellContext`\[Nu]$$ = 0.7, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
+      Hold[$CellContext`TC$$], 2, 3}, {
+      Hold[$CellContext`\[Nu]$$], 0.7, 1.2}, {
+      Hold[$CellContext`\[Gamma]$$], 1.1, 1.8}}, Typeset`size$$ = {
+    360., {107., 111.2504145161389}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`TC$33577$$ = False, $CellContext`\[Nu]$33578$$ = 
+    0, $CellContext`\[Gamma]$33579$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`TC$$ = 2, $CellContext`\[Gamma]$$ = 
+        1.1, $CellContext`\[Nu]$$ = 0.7}, "ControllerVariables" :> {
+        Hold[$CellContext`TC$$, $CellContext`TC$33577$$, False], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$33578$$, 0], 
+        Hold[$CellContext`\[Gamma]$$, $CellContext`\[Gamma]$33579$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ListPlot[{
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T10, $CellContext`Sus10, 10], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T20, $CellContext`Sus20, 20], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T30, $CellContext`Sus30, 30], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T40, $CellContext`Sus40, 40], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]}, 
+        PlotRange -> {{-4, 6}, All}, PlotStyle -> Thick], 
+      "Specifications" :> {
+       "\!\(\*SubscriptBox[\(T\), \(c\)]\)" -> {$CellContext`TC$$, 2, 3}, 
+        "\[Nu]" -> {$CellContext`\[Nu]$$, 0.7, 1.2}, 
+        "\[Gamma]" -> {$CellContext`\[Gamma]$$, 1.1, 1.8}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{638., {137.13403309800196`, 142.86596690199804`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.8915976122611423`*^9, 3.8915976841620407`*^9, 
+  3.8915977574018383`*^9, 3.8915977879642286`*^9},
+ CellLabel->
+  "Out[198]=",ExpressionUUID->"258bb3d2-426e-48c0-a462-d241c65c4685"]
 }, Open  ]]
 },
-WindowSize->{1141.2, 604.8},
+WindowSize->{757., 388.5},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-FrontEndVersion->"13.2 para Microsoft Windows (64-bit) (November 18, 2022)",
+FrontEndVersion->"12.3 para Microsoft Windows (64-bit) (July 9, 2021)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"623ae157-7fab-4977-abc9-f757ab8972b7"
 ]
@@ -270,10 +618,26 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 267, 5, 43, "Input",ExpressionUUID->"b4647481-1b41-4abe-8725-00d91634bf00"],
+Cell[558, 20, 206, 5, 43, "Input",ExpressionUUID->"3936d86a-5c80-4a51-965c-f2ae76e0ee09"],
 Cell[CellGroupData[{
-Cell[850, 29, 5963, 162, 650, "Input",ExpressionUUID->"d2375fd9-c1b9-4967-bde8-d799df438b88"],
-Cell[6816, 193, 3267, 59, 331, "Output",ExpressionUUID->"95988da2-07e2-4b5d-aa3f-cfc07de92d43"]
+Cell[789, 29, 13841, 342, 3055, "Input",ExpressionUUID->"b4647481-1b41-4abe-8725-00d91634bf00"],
+Cell[14633, 373, 3172, 58, 303, "Output",ExpressionUUID->"91732344-02d7-4d47-9f3a-ed737cc024da"],
+Cell[17808, 433, 267, 4, 32, "Output",ExpressionUUID->"fa027269-d3ee-4fb0-92f9-caca46f1c298"],
+Cell[18078, 439, 265, 4, 32, "Output",ExpressionUUID->"059ee62e-523e-4066-87ac-5a8429143a0a"],
+Cell[18346, 445, 265, 4, 32, "Output",ExpressionUUID->"904cb1d0-6b20-4343-882f-0c98e553f1a3"],
+Cell[18614, 451, 264, 4, 32, "Output",ExpressionUUID->"46c1a37a-b18f-4b42-bff0-3a4afc11a255"],
+Cell[18881, 457, 267, 4, 32, "Output",ExpressionUUID->"3890cdf6-d66b-48a0-b556-1f428d1f49d1"],
+Cell[19151, 463, 287, 6, 32, "Output",ExpressionUUID->"5f950f8a-c5c8-4ade-8f64-459370893c2d"],
+Cell[19441, 471, 289, 6, 32, "Output",ExpressionUUID->"2d60e740-4e6d-4238-895d-6fcbdfd43cd5"],
+Cell[19733, 479, 289, 6, 32, "Output",ExpressionUUID->"708eae1a-b807-4d12-bc94-4e603c90bf35"],
+Cell[20025, 487, 289, 6, 32, "Output",ExpressionUUID->"14bdea8b-0431-4f73-9264-77abcd1b0a86"],
+Cell[20317, 495, 289, 6, 32, "Output",ExpressionUUID->"e7324bd9-9558-4677-ac65-c7a3e071ccc2"],
+Cell[20609, 503, 287, 6, 32, "Output",ExpressionUUID->"87f7f59f-e972-43d8-98d0-14429a2653eb"],
+Cell[20899, 511, 287, 6, 32, "Output",ExpressionUUID->"415d31b6-c726-4555-907c-baebac2ea928"],
+Cell[21189, 519, 287, 6, 32, "Output",ExpressionUUID->"b13eac36-19cd-4640-b95f-5a0de2e0b481"],
+Cell[21479, 527, 287, 6, 32, "Output",ExpressionUUID->"db1fbf6b-b5be-4643-9a70-c51b3dbcb8a0"],
+Cell[21769, 535, 289, 6, 32, "Output",ExpressionUUID->"9da0935a-6c13-4e9d-bacd-6204e7a6472f"],
+Cell[22061, 543, 3143, 57, 299, "Output",ExpressionUUID->"258bb3d2-426e-48c0-a462-d241c65c4685"]
 }, Open  ]]
 }
 ]

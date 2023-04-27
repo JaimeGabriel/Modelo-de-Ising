@@ -3,7 +3,8 @@ from tqdm import tqdm
 
 from Montecarlo import *
 from Representacion import *
-from Red import *
+from Red import red_random, pintar
+from Initial_Values import N_calentar, N_med, N_mover, una_temp, pintar_intermedios, loop_T, temp_i, temp_f, T_c, nu
 
 #--------------------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------------------------------
@@ -11,7 +12,7 @@ from Red import *
 #--------------------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------------------------------
 
-def One_Temp(N, N_calentar, N_med, N_mover, T_inicial, B, pintar_intermedios):
+def One_Temp(N):
 
     #---------------------------------------------------------------------------------------------------------------------
     #---------------------------------------------------------------------------------------------------------------------
@@ -23,14 +24,14 @@ def One_Temp(N, N_calentar, N_med, N_mover, T_inicial, B, pintar_intermedios):
     red = red_random(N)
     pintar(red, N, "inicial")
 
-    beta=1/T_inicial
+    beta=1/una_temp
     #---------------------------------------------------------------------------------------------------------------------
     #---------------------------------------------------------------------------------------------------------------------
     #---------------------------------------VECTOR DE EXPONENCIALES-------------------------------------------------------
     #---------------------------------------------------------------------------------------------------------------------
     #---------------------------------------------------------------------------------------------------------------------
 
-    vec_exp = Vector_Exponenciales(beta, B)
+    vec_exp = Vector_Exponenciales(beta)
 
     #---------------------------------------------------------------------------------------------------------------------
     #---------------------------------------------------------------------------------------------------------------------
@@ -40,7 +41,7 @@ def One_Temp(N, N_calentar, N_med, N_mover, T_inicial, B, pintar_intermedios):
 
     print("Calentamiento: ")
 
-    for j in tqdm(range(N_calentar)):
+    for j in range(N_calentar):
         Metropolis(red, N, vec_exp)
 
     m = np.zeros(N_med)
@@ -51,7 +52,7 @@ def One_Temp(N, N_calentar, N_med, N_mover, T_inicial, B, pintar_intermedios):
     print("Medidas de Montecarlo: ")
 
     velocidad_pasos_intermedios = 50 # Cuanto mayor, menos pasos intermedios se representan
-    for i in tqdm(range(N_med)):
+    for i in range(N_med):
         for j in range(N_mover):
             Metropolis(red, N, vec_exp)
 
@@ -69,7 +70,7 @@ def One_Temp(N, N_calentar, N_med, N_mover, T_inicial, B, pintar_intermedios):
         #   Ejecutamos la función de magnetizaciones, que nos da un valor de la magnetización o otro de la magnetización al cuadrado.
         #   Guardamos las salidas y luego las escribimos en un archivo
         m[i] = magnetizaciones(red)
-        e[i] = energias(red, B)
+        e[i] = energias(red)
 
     #   Cerramos los archivos en lo que hemos escrito
     Medidas = np.column_stack((m, np.absolute(m), np.square(m), e, np.square(e)))
@@ -108,7 +109,8 @@ def One_Temp(N, N_calentar, N_med, N_mover, T_inicial, B, pintar_intermedios):
 #--------------------------------------------------------------------------------------------------------------------------
 
 
-def Loop_Temp(N, N_calentar, N_med, N_mover, temp_i,temp_f, loop_T, B, pintar_intermedios):
+def Loop_Temp(N, N_calentar, N_mover, worker):
+
     #---------------------------------------------------------------------------------------------------------------------
     #---------------------------------------------------------------------------------------------------------------------
     #---------------------------------------------RED INICIAL-------------------------------------------------------------
@@ -118,6 +120,8 @@ def Loop_Temp(N, N_calentar, N_med, N_mover, temp_i,temp_f, loop_T, B, pintar_in
     #   Creamos la red inicial y la pintamos
     red = red_random(N)
     pintar(red, N, "inicial")
+    T_i = (temp_i*T_c)/N**(1/nu)+T_c
+    T_f = (temp_f*T_c)/N**(1/nu)+T_c
 
     #---------------------------------------------------------------------------------------------------------------------
     #---------------------------------------------------------------------------------------------------------------------
@@ -128,9 +132,10 @@ def Loop_Temp(N, N_calentar, N_med, N_mover, temp_i,temp_f, loop_T, B, pintar_in
 
     # Inicio loop temperaturas
     #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    print("Inicio bucle temperaturas")
-    for l in tqdm(range(loop_T)):
-        temp = (temp_f-temp_i)*l/(loop_T-1)+temp_i
+    progreso=100/(loop_T)
+
+    for l in range(loop_T):
+        temp = (T_f-T_i)*l/(loop_T-1)+T_i
         #print(" Temperatura actual del bucle: ", temp)
         beta = 1/temp
     
@@ -140,7 +145,7 @@ def Loop_Temp(N, N_calentar, N_med, N_mover, temp_i,temp_f, loop_T, B, pintar_in
         #---------------------------------------------------------------------------------------------------------------------
         #---------------------------------------------------------------------------------------------------------------------
 
-        vec_exp = Vector_Exponenciales(beta, B)
+        vec_exp = Vector_Exponenciales(beta)
 
         #---------------------------------------------------------------------------------------------------------------------
         #---------------------------------------------------------------------------------------------------------------------
@@ -162,6 +167,8 @@ def Loop_Temp(N, N_calentar, N_med, N_mover, temp_i,temp_f, loop_T, B, pintar_in
 
         m = np.zeros(N_med)
         e = np.zeros(N_med)
+        
+        print("El trabajador " + worker + " lleva", (l*progreso) , "%")
 
         #print("Montecarlo: ")
         #   Ejecutamos el algortimo de metropolis. Movemos N_mover entre cada medida. Medimo N_med veces
@@ -184,9 +191,11 @@ def Loop_Temp(N, N_calentar, N_med, N_mover, temp_i,temp_f, loop_T, B, pintar_in
             #   Lo mismo para las energías
             #   Guardamos las salidas y luego las escribimos en un archivo
             m[i] = magnetizaciones(red)
-            e[i] = energias(red, B)
+            e[i] = energias(red)
+
         
-            # print("Progreso", (100*i)/N_med, "%", end = "\r")
+        
+        # print("Progreso", (100*i)/N_med, "%", end = "\r")
 
         #   Cerramos los archivos en lo que hemos escrito
         Medidas = np.column_stack((m, np.absolute(m), np.square(m), e, np.square(e)))
@@ -208,9 +217,9 @@ def Loop_Temp(N, N_calentar, N_med, N_mover, temp_i,temp_f, loop_T, B, pintar_in
     #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     #Guarda todos los datos de la función promedios
-    np.savetxt('Data/Promedios(T).csv', T_Prom, delimiter=',',header='T Magnetizacion Magnetization_Absoluta Magnetization_cuadrada Susceptibilidad Energia Energia_cuadrada Capacidad_calorifica')
+    np.savetxt('Data/Promedios-N-'+ str(N) +'_Nmed-'+ str(N_med) +'.csv', T_Prom, delimiter=',',header='1.T 2.Magnetizacion 3.Magnetization_Absoluta 4.Magnetization_cuadrada 5.Susceptibilidad 6.Energia 7.Energia_cuadrada 8.Capacidad_calorifica')
     #Guarda los datos de T y Sus con diferente nombre segun su N y N_med
-    np.savetxt('Data/GraphSUS_N-'+ str(N) +'_Nmed-'+ str(N_med) +'.csv', T_Prom[:,[0,4]], delimiter=',',header='T Susceptibilidad')
+    #np.savetxt('Data/GraphSUS_N-'+ str(N) +'_Nmed-'+ str(N_med) +'.csv', T_Prom[:,[0,4]], delimiter=',',header='T Susceptibilidad')
 
     #---------------------------------------------------------------------------------------------------------------------
     #---------------------------------------------------------------------------------------------------------------------
@@ -221,5 +230,4 @@ def Loop_Temp(N, N_calentar, N_med, N_mover, temp_i,temp_f, loop_T, B, pintar_in
     #   Generamos los gráficos
     Representación_T(T_Prom)
     Representacion(Medidas)
-
     return None

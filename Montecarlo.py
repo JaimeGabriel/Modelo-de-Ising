@@ -1,9 +1,10 @@
 from Medidas import *
 import random as rnd
 from numba import jit
+from Initial_Values import B
 
 @jit(nopython=True)
-def Vector_Exponenciales(beta, B):
+def Vector_Exponenciales(beta):
     s0 = np.array([-1, 1])
     j = np.arange(5)
     vec_exp = np.exp(-2 * beta * np.outer(s0, (j-2)*2 + B))

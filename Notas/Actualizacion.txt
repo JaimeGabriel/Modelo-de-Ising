@@ -12,12 +12,12 @@
 + Revisar promedios pag 78 fig 3.7 newman
 + promedio del valor absoluto de la magnetización
 + multiplicar la energía solo por el de la derecha y el de arriba
++ usar variable global
 
 ---------------------------------------------------------------------------------------------------------------------
 
 - Una funcion que mida la hora para saludar correctamente al usuario
 - escalado finito -> cap 8 newman
-- usar variable global
 - Calcular automaticamente las temperaturas incial y final a partir de las de la gráfica escalada
 
 ----

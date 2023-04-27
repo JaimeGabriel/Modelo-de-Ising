@@ -1,5 +1,6 @@
 import numpy as np
 from numba import jit
+from Initial_Values import B
 
 @jit(nopython=True)
 def SpinSuma(i, j, red, N): # Función que calcula la suma de los spines vecinos al red[i][j]
@@ -8,7 +9,7 @@ def SpinSuma(i, j, red, N): # Función que calcula la suma de los spines vecinos
 
     return ssuma
 
-def energias(red, B):
+def energias(red):
 
     shifted_down = np.roll(red, 1, axis=0)
     shifted_right = np.roll(red, 1, axis=1)
