@@ -10,58 +10,55 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     22682,        574]
-NotebookOptionsPosition[     21745,        550]
-NotebookOutlinePosition[     22176,        567]
-CellTagsIndexPosition[     22133,        564]
+NotebookDataLength[     88990,       2022]
+NotebookOptionsPosition[     86393,       1970]
+NotebookOutlinePosition[     86819,       1987]
+CellTagsIndexPosition[     86776,       1984]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-
-Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
   RowBox[{
    RowBox[{"SetDirectory", "[", 
-    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], 
-  "\[IndentingNewLine]", 
+    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], "\n", 
   RowBox[{"(*", 
    RowBox[{
    "IMPORTAR", " ", "ARCHIVOS", " ", "Y", " ", "EXTRAER", " ", "T", " ", "Y", 
-    " ", "SUS"}], "*)"}]}], "\n", 
+    " ", "SUS"}], "*)"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"DataL10", "=", 
    RowBox[{"Import", "[", 
-    RowBox[{"\"\<GraphSUS_N-10_Nmed-300000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+    RowBox[{"\"\<Promedios-N-10_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
      RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
      RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"DataL20", "=", 
    RowBox[{"Import", "[", 
-    RowBox[{"\"\<GraphSUS_N-20_Nmed-300000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+    RowBox[{"\"\<Promedios-N-20_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
      RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
      RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"DataL30", "=", 
    RowBox[{"Import", "[", 
-    RowBox[{"\"\<GraphSUS_N-30_Nmed-300000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+    RowBox[{"\"\<Promedios-N-30_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
      RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
      RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"DataL40", "=", 
    RowBox[{"Import", "[", 
-    RowBox[{"\"\<GraphSUS_N-40_Nmed-300000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+    RowBox[{"\"\<Promedios-N-40_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
      RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
      RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"DataL50", "=", 
    RowBox[{"Import", "[", 
-    RowBox[{"\"\<GraphSUS_N-50_Nmed-300000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+    RowBox[{"\"\<Promedios-N-50_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
      RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
      RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
@@ -74,7 +71,7 @@ Cell[BoxData[{
   RowBox[{"Sus10", " ", "=", " ", 
    RowBox[{"DataL10", "[", 
     RowBox[{"[", 
-     RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+     RowBox[{"All", ",", "3"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"T20", "=", 
    RowBox[{"DataL20", "[", 
@@ -84,7 +81,7 @@ Cell[BoxData[{
   RowBox[{"Sus20", " ", "=", " ", 
    RowBox[{"DataL20", "[", 
     RowBox[{"[", 
-     RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+     RowBox[{"All", ",", "3"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"T30", "=", 
    RowBox[{"DataL30", "[", 
@@ -94,7 +91,7 @@ Cell[BoxData[{
   RowBox[{"Sus30", " ", "=", " ", 
    RowBox[{"DataL30", "[", 
     RowBox[{"[", 
-     RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+     RowBox[{"All", ",", "3"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"T40", "=", 
    RowBox[{"DataL40", "[", 
@@ -104,7 +101,7 @@ Cell[BoxData[{
   RowBox[{"Sus40", " ", "=", " ", 
    RowBox[{"DataL40", "[", 
     RowBox[{"[", 
-     RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+     RowBox[{"All", ",", "3"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"T50", "=", 
    RowBox[{"DataL50", "[", 
@@ -115,7 +112,7 @@ Cell[BoxData[{
    RowBox[{"Sus50", " ", "=", " ", 
     RowBox[{"DataL50", "[", 
      RowBox[{"[", 
-      RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+      RowBox[{"All", ",", "3"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{"FUNCIONES", " ", "DE", " ", "ESCALADO"}], 
    "*)"}]}], "\[IndentingNewLine]", 
@@ -200,8 +197,15 @@ Cell[BoxData[{
         RowBox[{"{", 
          RowBox[{
           RowBox[{"-", "5"}], ",", "7"}], "}"}], ",", "All"}], "}"}]}], ",", 
-     RowBox[{"PlotStyle", "\[Rule]", "Thick"}]}], "]"}], 
-   "\[IndentingNewLine]", ",", 
+     RowBox[{"PlotStyle", "\[Rule]", "Thick"}], ",", " ", 
+     RowBox[{"PlotTheme", "\[Rule]", "\"\<Scientific\>\""}], ",", " ", 
+     RowBox[{"FrameLabel", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Temperatura\>\"", ",", " ", 
+        "\"\<Magnetizaci\[OAcute]n en valor absoluta\>\""}], "}"}]}], ",", 
+     " ", 
+     RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}], "\[IndentingNewLine]", ",", 
    RowBox[{"\"\<\!\(\*SubscriptBox[\(T\), \(c\)]\)\>\"", "->", 
     RowBox[{"{", 
      RowBox[{"TC", ",", "2", ",", "3"}], "}"}]}], ",", 
@@ -210,61 +214,53 @@ Cell[BoxData[{
      RowBox[{"\[Nu]", ",", "0.7", ",", "1.2"}], "}"}]}], ",", 
    RowBox[{"\"\<\[Gamma]\>\"", "->", 
     RowBox[{"{", 
-     RowBox[{"\[Gamma]", ",", "1.1", ",", "1.8"}], "}"}]}]}], "]"}]}], "Input",
+     RowBox[{"\[Gamma]", ",", 
+      RowBox[{"-", "2"}], ",", "0"}], "}"}]}]}], "]"}]}], "Input",
  CellChangeTimes->{{3.8915987214374866`*^9, 3.891598729112107*^9}, {
    3.891598776399809*^9, 3.8915987881866064`*^9}, {3.8915988294532948`*^9, 
    3.8915988365836945`*^9}, {3.8915989897410808`*^9, 3.891598991533006*^9}, {
    3.8917488249977655`*^9, 3.8917488321247587`*^9}, {3.8917488696777186`*^9, 
    3.891748927523987*^9}, 3.891748966232729*^9, {3.8917494407040825`*^9, 
-   3.891749470906606*^9}},ExpressionUUID->"66ecde10-4f3b-4dc3-a046-\
-0444deb14d0b"],
-
-Cell[BoxData[
- TemplateBox[{
-  "Symbol", "argx", 
-   "\"\\!\\(\\*RowBox[{\\\"Symbol\\\"}]\\) called with \\!\\(\\*RowBox[{\\\"0\
-\\\"}]\\) arguments; 1 argument is expected.\"", 2, 8, 1, 
-   23804046021138719553, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.8917494588131557`*^9},
+   3.891749470906606*^9}, {3.8918541618984766`*^9, 3.8918541961825366`*^9}, {
+   3.8918542306199927`*^9, 3.8918542382417293`*^9}, {3.892090933715811*^9, 
+   3.892090945757901*^9}, {3.8920909809657407`*^9, 3.8920909816539116`*^9}, {
+   3.8920911227028847`*^9, 3.8920911228592196`*^9}, {3.892091194043436*^9, 
+   3.8920912028245373`*^9}, {3.89209125022677*^9, 3.892091258105975*^9}, {
+   3.8920912891835933`*^9, 3.89209129623081*^9}, {3.8925575561268616`*^9, 
+   3.892557642537694*^9}, {3.8925577052565765`*^9, 3.892557744505932*^9}, {
+   3.892557827914742*^9, 3.8925578403389177`*^9}, {3.89255787134746*^9, 
+   3.892557932390622*^9}, {3.89255796644098*^9, 3.8925580105511217`*^9}, {
+   3.8925580638641376`*^9, 3.892558064404807*^9}, {3.892558107255431*^9, 
+   3.8925581401217203`*^9}, {3.8925581748272324`*^9, 3.892558179727614*^9}, {
+   3.8925588358070135`*^9, 3.8925588988959994`*^9}},
  CellLabel->
-  "Durante la evaluaci\[OAcute]n de \
-In[1]:=",ExpressionUUID->"cb3daba0-3910-4da3-a956-94823a1c412b"],
+  "In[376]:=",ExpressionUUID->"66ecde10-4f3b-4dc3-a046-0444deb14d0b"],
 
-Cell[BoxData[
- TemplateBox[{
-  "Symbol", "argx", 
-   "\"\\!\\(\\*RowBox[{\\\"Symbol\\\"}]\\) called with \\!\\(\\*RowBox[{\\\"0\
-\\\"}]\\) arguments; 1 argument is expected.\"", 2, 9, 2, 
-   23804046021138719553, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.8917494588709283`*^9},
- CellLabel->
-  "Durante la evaluaci\[OAcute]n de \
-In[1]:=",ExpressionUUID->"5c4d284f-96cb-4085-88b4-c041d23c06e3"],
+Cell[CellGroupData[{
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`TC$$ = 2.351, $CellContext`\[Gamma]$$ = 
-    1.1, $CellContext`\[Nu]$$ = 0.7, Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
-    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
-    "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
+   DynamicModuleBox[{$CellContext`TC$$ = 
+    2.27, $CellContext`\[Gamma]$$ = -0.132, $CellContext`\[Nu]$$ = 1, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
       Hold[$CellContext`TC$$], 2, 3}, {
       Hold[$CellContext`\[Nu]$$], 0.7, 1.2}, {
-      Hold[$CellContext`\[Gamma]$$], 1.1, 1.8}}, Typeset`size$$ = {
-    396.00000000000006`, {120., 125.16162215733345`}}, Typeset`update$$ = 0, 
+      Hold[$CellContext`\[Gamma]$$], -2, 0}}, Typeset`size$$ = {
+    396.00000000000006`, {126., 131.57407672555786`}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`TC$8122$$ = False, $CellContext`\[Nu]$8123$$ = 
-    0, $CellContext`\[Gamma]$8124$$ = 0}, 
+    True, $CellContext`TC$30836$$ = False, $CellContext`\[Nu]$30837$$ = 
+    0, $CellContext`\[Gamma]$30838$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
-      "Variables" :> {$CellContext`TC$$ = 2, $CellContext`\[Gamma]$$ = 
-        1.1, $CellContext`\[Nu]$$ = 0.7}, "ControllerVariables" :> {
-        Hold[$CellContext`TC$$, $CellContext`TC$8122$$, False], 
-        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$8123$$, 0], 
-        Hold[$CellContext`\[Gamma]$$, $CellContext`\[Gamma]$8124$$, 0]}, 
+      "Variables" :> {$CellContext`TC$$ = 
+        2, $CellContext`\[Gamma]$$ = -2, $CellContext`\[Nu]$$ = 0.7}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`TC$$, $CellContext`TC$30836$$, False], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$30837$$, 0], 
+        Hold[$CellContext`\[Gamma]$$, $CellContext`\[Gamma]$30838$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -280,13 +276,78 @@ $CellContext`\[Gamma]$$, $CellContext`T30, $CellContext`Sus30, 30],
 $CellContext`\[Gamma]$$, $CellContext`T40, $CellContext`Sus40, 40], 
          $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
 $CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]}, 
-        PlotRange -> {{-5, 7}, All}, PlotStyle -> Thick], 
-      "Specifications" :> {
+        PlotRange -> {{-5, 7}, All}, PlotStyle -> Thick, PlotTheme -> 
+        "Scientific", 
+        FrameLabel -> {
+         "Temperatura", "Magnetizaci\[OAcute]n en valor absoluta"}, Axes -> 
+        True], "Specifications" :> {
        "\!\(\*SubscriptBox[\(T\), \(c\)]\)" -> {$CellContext`TC$$, 2, 3}, 
         "\[Nu]" -> {$CellContext`\[Nu]$$, 0.7, 1.2}, 
-        "\[Gamma]" -> {$CellContext`\[Gamma]$$, 1.1, 1.8}}, "Options" :> {}, 
+        "\[Gamma]" -> {$CellContext`\[Gamma]$$, -2, 0}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{452., {190.84743637626525`, 197.15256362373475`}},
+     ImageSizeCache->{708., {158.84743648138829`, 165.15256351861171`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Input",
+ CellChangeTimes->{3.8925589189376345`*^9},
+ CellLabel->
+  "In[396]:=",ExpressionUUID->"f274d2e9-7b79-495a-be0f-47c00c425434"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`TC$$ = 
+    2.27, $CellContext`\[Gamma]$$ = -0.132, $CellContext`\[Nu]$$ = 1, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`TC$$], 2.27}, 2, 3}, {{
+       Hold[$CellContext`\[Nu]$$], 1}, 0.7, 1.2}, {{
+       Hold[$CellContext`\[Gamma]$$], -0.132}, -2, 0}}, Typeset`size$$ = {
+    396.00000000000006`, {126., 131.57407672555786`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`TC$31664$$ = False, $CellContext`\[Nu]$31665$$ = 
+    0, $CellContext`\[Gamma]$31666$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`TC$$ = 
+        2.27, $CellContext`\[Gamma]$$ = -0.132, $CellContext`\[Nu]$$ = 1}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`TC$$, $CellContext`TC$31664$$, False], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$31665$$, 0], 
+        Hold[$CellContext`\[Gamma]$$, $CellContext`\[Gamma]$31666$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ListPlot[{
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T10, $CellContext`Sus10, 10], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T20, $CellContext`Sus20, 20], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T30, $CellContext`Sus30, 30], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T40, $CellContext`Sus40, 40], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]}, 
+        PlotRange -> {{-5, 7}, All}, PlotStyle -> Thick, PlotTheme -> 
+        "Scientific", 
+        FrameLabel -> {
+         "Temperatura", "Magnetizaci\[OAcute]n en valor absoluta"}, Axes -> 
+        True], "Specifications" :> {
+       "\!\(\*SubscriptBox[\(T\), \(c\)]\)" -> {{$CellContext`TC$$, 2.27}, 2, 
+          3}, "\[Nu]" -> {{$CellContext`\[Nu]$$, 1}, 0.7, 1.2}, 
+        "\[Gamma]" -> {{$CellContext`\[Gamma]$$, -0.132}, -2, 0}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{708., {158.84743648138829`, 165.15256351861171`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -297,13 +358,9 @@ $CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]},
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{{3.891598732399625*^9, 3.8915987435837164`*^9}, 
-   3.8915988061988525`*^9, 3.891598837649599*^9, 3.891598877491009*^9, {
-   3.8915989766637955`*^9, 3.8915989947732*^9}, {3.891748833579732*^9, 
-   3.8917488443614845`*^9}, 3.891748878955262*^9, {3.8917489288804903`*^9, 
-   3.891748931924432*^9}, {3.891748966720727*^9, 3.8917489705145435`*^9}, 
-   3.891749240243669*^9, 3.8917494596838694`*^9},
- CellLabel->"Out[19]=",ExpressionUUID->"28125a2a-30f4-4fd2-b938-e243021c2167"]
+ CellChangeTimes->{3.8925589192965794`*^9},
+ CellLabel->
+  "Out[396]=",ExpressionUUID->"dd20038e-24a0-4dd8-a9c3-f62d456c3bf8"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -505,7 +562,7 @@ Cell[BoxData[
       Hold[$CellContext`TC$$], 2, 3}, {
       Hold[$CellContext`\[Nu]$$], 0.7, 1.2}, {
       Hold[$CellContext`\[Gamma]$$], 1.1, 1.8}}, Typeset`size$$ = {
-    396.00000000000006`, {120., 125.16162215733354`}}, Typeset`update$$ = 0, 
+    396.00000000000006`, {125., 130.3194522141868}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
     True, $CellContext`TC$29590$$ = False, $CellContext`\[Nu]$29591$$ = 
     0, $CellContext`\[Gamma]$29592$$ = 0}, 
@@ -529,7 +586,7 @@ $CellContext`\[Gamma]$$, $CellContext`T10, $CellContext`Sus10, 10]},
         "\[Nu]" -> {$CellContext`\[Nu]$$, 0.7, 1.2}, 
         "\[Gamma]" -> {$CellContext`\[Gamma]$$, 1.1, 1.8}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{452., {190.84743637626525`, 197.15256362373475`}},
+     ImageSizeCache->{708., {157.84743648138829`, 164.15256351861171`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -546,9 +603,1372 @@ $CellContext`\[Gamma]$$, $CellContext`T10, $CellContext`Sus10, 10]},
    3.8917496986909275`*^9, 3.8917497074693785`*^9}},
  CellLabel->
   "Out[172]=",ExpressionUUID->"a0a37388-5fa4-4d8e-8be7-d241d37deb32"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Graphic", "[", 
+      RowBox[{"2.26912", ",", "1", ",", " ", 
+       RowBox[{"-", "0.132"}], ",", "T10", ",", "Sus10", ",", "10"}], "]"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{"Graphic", "[", 
+      RowBox[{"2.26912", ",", "1", ",", " ", 
+       RowBox[{"-", "0.132"}], ",", "T20", ",", "Sus20", ",", "20"}], "]"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{"Graphic", "[", 
+      RowBox[{"2.26912", ",", "1", ",", " ", 
+       RowBox[{"-", "0.132"}], ",", "T30", ",", "Sus30", ",", "30"}], "]"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{"Graphic", "[", 
+      RowBox[{"2.26912", ",", "1", ",", " ", 
+       RowBox[{"-", "0.132"}], ",", "T40", ",", "Sus40", ",", "40"}], "]"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{"Graphic", "[", 
+      RowBox[{"2.26912", ",", "1", ",", " ", 
+       RowBox[{"-", "0.132"}], ",", "T50", ",", "Sus50", ",", "50"}], "]"}]}],
+     "\[IndentingNewLine]", "}"}], ",", 
+   RowBox[{"PlotRange", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "5"}], ",", "7"}], "}"}], ",", "All"}], "}"}]}], ",", 
+   RowBox[{"PlotStyle", "\[Rule]", "Thick"}], ",", " ", 
+   RowBox[{"PlotTheme", "\[Rule]", "\"\<Scientific\>\""}], ",", " ", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Tdsdasassd\>\"", ",", " ", "\"\<m\[NTilde]lsds\[NTilde]\>\""}], 
+     "}"}]}], ",", " ", 
+   RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8925582200209303`*^9, 3.8925582439405518`*^9}, {
+  3.8925582749971237`*^9, 3.8925583266687098`*^9}, {3.892558601711299*^9, 
+  3.892558641269846*^9}, {3.8925587735350924`*^9, 3.8925588184098253`*^9}},
+ CellLabel->
+  "In[335]:=",ExpressionUUID->"ce68bbbb-000f-4398-8db7-f6a7abf7c43b"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {
+    {RGBColor[0.9, 0.36, 0.054], PointSize[0.009166666666666668], Thickness[
+     Large], CapForm["Butt"], PointBox[CompressedData["
+1:eJwBUQGu/iFib1JlAgAAABQAAAACAAAAmeSsCTz7D8DT2omkyIb1P48lj/jr
+xAvAbaydkppp9T+HZnHnm44HwApQ8cl4PfU/fadT1ktYA8Bn+3aYjPv0P+zQ
+a4r3Q/6/o7sdpB6a9D/YUjBoV9f1v2F0qP25B/Q/iKnpi27V6r9CPb7MTxnz
+P9Ja5Y5c+NO/lhivyr2U8T/WOhH0R3TLP0iOAVWg5e4/5kp7QVK25z85SyfC
+GuHpP4Ij+ULJR/Q/7VhUMNQ95T+SoTRlabT8PwdcAKkfqeE/1Q+4w4SQAkC2
+LShT8uvdP+DO1dTUxgZAMnUadJMy2j/kjfPlJP0KQM52KQY0V9c/8UwR93Qz
+D0B4tMlcLDrVP/yFF4TitBFABK3RA2mQ0z+CZaaMCtATQPHqV/RpV9I/BkU1
+lTLrFUCXFJh2mDzRP4kkxJ1aBhhAWHyfIkVf0D8oWaV+
+      "]]}, 
+    {RGBColor[0.365248, 0.427802, 0.758297], PointSize[0.009166666666666668], 
+     Thickness[Large], CapForm["Butt"], PointBox[CompressedData["
+1:eJwBUQGu/iFib1JlAgAAABQAAAACAAAA7rZ3xErzD8AMruYaIqz2P+b3WbP6
+vAvA9uKKcqpp9j/aODyiqoYHwHJvZc/EGPY/0nkekVpQA8C4IAJqgbH1P5V1
+AQAVNP6/EAmhFKcn9T9998XddMf1v9btd5P7a/Q/7fIUd6m16r/f8vuQslzz
+P3ntO2XSuNO/SNASpNe88T/QFWRHXPPLP8uzWd1bz+4/gQFQVhfW5z+675Aa
+t67pP9l+Y82rV/Q/j1ERo0155D/x/J7vS8T8P9e2Vu0hoOA/fD3tCHaYAkD0
+nXnqCqnbP4j8ChrGzgZAZb7Nuvir1z+UuygrFgULQHOw9LYjwdQ/l3pGPGY7
+D0BC+LUaP6HSP9IcsibbuBFAteChHMTt0D9Y/EAvA9QTQDhddjKuYs8/2dvP
+NyvvFUBwOLTMpf/MP2C7XkBTChhAFdonAnljyz/cL6kz
+      "]]}, 
+    {RGBColor[0.945109, 0.593901, 0.], PointSize[0.009166666666666668], 
+     Thickness[Large], CapForm["Butt"], PointBox[CompressedData["
+1:eJwBUQGu/iFib1JlAgAAABQAAAACAAAAQ4lCf1nrD8DC8HE8oBf3PzfKJG4J
+tQvA+FvBi/3H9j8qCwdduX4HwHoNYRjnaPY/K0zpS2lIA8DjnvS2JfT1Pz4a
+l3UyJP6/Fyt1xf1f9T8mnFtTkrf1v1+Q8ev4kfQ/HDxAYuSV6r+lCJQ6+Wzz
+P0KAkjtIedO/cgwNF/7a8T8+8LaacHLMP2p/fk7cA+8/P7gka9z15z9j0bFt
+J9fpPznazVeOZ/Q/a3werx724z9QWAl6LtT8P/52zaAvOOA/NGsiTmegAkDV
+wf1+Ia/aPzMqQF+31gZA1Aymgjol1z8/6V1wBw0LQBiH/LXf4tM/TKh7gVdD
+D0BOt/TGht3RP6uzTMnTvBFA95kKonHjzz8rk9vR+9cTQBed5Oe2eM0/sXJq
+2iPzFUAqe1S5X0nLPzhS+eJLDhhAuKpCSqdYyT+cpKEZ
+      "]]}, 
+    {RGBColor[0.645957, 0.253192, 0.685109], PointSize[0.009166666666666668], 
+     Thickness[Large], CapForm["Butt"], PointBox[CompressedData["
+1:eJwBUQGu/iFib1JlAgAAABQAAAACAAAAk1sNOmjjD8CazRsFuFH3P5Cc7ygY
+rQvA/o9HBcv69j963dEXyHYHwL0658aUlPY/dx60BnhAA8CZsVo+LRj2P+i+
+LOtPFP6/FLin+CSB9T+/QPHIr6f1v015l4/8rfQ/cIVrTR926r/lV6Szm4zz
+P8US6RG+OdO/ZbSvh+LR8T+rygnuhPHMPyfs4Ufa5e4//m75f6EV6D+iRbYp
+d1jpP4Y1OOJwd/Q/QM0X2cQZ5D+vs3MEEeT8P5pjkxHOTuA/25hXk1ioAkB/
+aUWUG5vaP95XdaSo3gZANMN5fYJ11j/iFpO1+BQLQD+1SflIONM/9tWwxkhL
+D0DvQtBjHFTRP31K52vMwBFApW+j7yAyzz//KXZ09NsTQPcJBod6WMw/igkF
+fRz3FUDwb7mFkxbKPwvpk4VEEhhAK/lxie1vyD8HYqWh
+      "]]}, 
+    {RGBColor[0.285821, 0.56, 0.450773], PointSize[0.009166666666666668], 
+     Thickness[Large], CapForm["Butt"], PointBox[CompressedData["
+1:eJwBUQGu/iFib1JlAgAAABQAAAACAAAA7C3Y9HbbD8C1oW8ncHf3P9xuuuMm
+pQvAROwyrZga9z/hr5zS1m4HwBoVg2whsvY/0PB+wYY4A8B4Xyvv6jD2P4Fj
+wmBtBP6/8vYdxISG9T+L5YY+zZf1v4q1U98Cv/Q/1c6WOFpW6r/VUdjQpMfz
+PySlP+gz+tK/YrdFsrsL8j++plxBmXDNPzePnc8nL+8/mSXOlGY16D8n4leI
+LIDpP+6QomxTh/Q/qFDLfw614z8PD96O8/P8P7j1N8SeBeA/gsaM2EmwAkDc
+ACIk/svZP5KFqumZ5gZAwfKs0CGx1T+kRMj66RwLQMPu3DpZE9M/ngPmCzpT
+D0BMfXYMVBLRP1fhgQ7FxBFAc0leaUkbzj/fwBAX7d8TQIxe8GDH48s/XaCf
+HxX7FUACyG/VcabJP+V/Lig9FhhAip+W+M3bxz/ltaij
+      "]]}}, {{}, {}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{
+    FormBox["\"Tdsdasassd\"", TraditionalForm], 
+    FormBox["\"m\[NTilde]lsds\[NTilde]\"", TraditionalForm]},
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  Frame->{{True, True}, {True, True}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameStyle->Automatic,
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{{0}, {0}},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  LabelStyle->{FontFamily -> "Times"},
+  Method->{
+   "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        Identity[
+         Part[#, 1]], 
+        Identity[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        Identity[
+         Part[#, 1]], 
+        Identity[
+         Part[#, 2]]}& )}},
+  PlotRange->{{-5, 7}, {0, 1.4666596928092137`}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{0, 0}, {
+     Scaled[0.02], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{
+  3.8925582112198443`*^9, {3.89255827599944*^9, 3.8925582921882367`*^9}, 
+   3.89255832794195*^9, {3.8925586022146497`*^9, 3.892558619309081*^9}, 
+   3.892558701266079*^9, {3.892558775228244*^9, 3.8925588190759845`*^9}},
+ CellLabel->
+  "Out[335]=",ExpressionUUID->"28bf28db-286f-4219-9dec-f792d2602f19"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"SetDirectory", "[", 
+    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], "\n", 
+  RowBox[{"(*", 
+   RowBox[{
+   "IMPORTAR", " ", "ARCHIVOS", " ", "Y", " ", "EXTRAER", " ", "T", " ", "Y", 
+    " ", "SUS"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL10", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<Promedios-N-10_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL20", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<Promedios-N-20_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL30", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<Promedios-N-30_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL40", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<Promedios-N-40_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL50", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<Promedios-N-50_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T10", "=", 
+   RowBox[{"DataL10", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sus10", " ", "=", " ", 
+   RowBox[{"DataL10", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "5"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T20", "=", 
+   RowBox[{"DataL20", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sus20", " ", "=", " ", 
+   RowBox[{"DataL20", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "5"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T30", "=", 
+   RowBox[{"DataL30", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sus30", " ", "=", " ", 
+   RowBox[{"DataL30", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "5"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T40", "=", 
+   RowBox[{"DataL40", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sus40", " ", "=", " ", 
+   RowBox[{"DataL40", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "5"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T50", "=", 
+   RowBox[{"DataL50", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Sus50", " ", "=", " ", 
+    RowBox[{"DataL50", "[", 
+     RowBox[{"[", 
+      RowBox[{"All", ",", "5"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"FUNCIONES", " ", "DE", " ", "ESCALADO"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"EscT", "[", 
+    RowBox[{"TC_", ",", "\[Nu]_", ",", "\[Gamma]_", ",", "T_", ",", "L_"}], 
+    "]"}], ":=", 
+   RowBox[{
+    SuperscriptBox["L", 
+     FractionBox["1", "\[Nu]"]], " ", 
+    FractionBox[
+     RowBox[{"T", "-", "TC"}], "TC"]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"EscSus", "[", 
+     RowBox[{"\[Nu]_", ",", "\[Gamma]_", ",", "Sus_", ",", "L_"}], "]"}], ":=", 
+    RowBox[{
+     SuperscriptBox["L", 
+      FractionBox[
+       RowBox[{"-", "\[Gamma]"}], "\[Nu]"]], " ", "Sus"}]}], ";"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "FUNCI\[CapitalOAcute]N", " ", "QUE", " ", "CREA", " ", "UN", " ", 
+    "VECTOR", " ", "DE", " ", "N", " ", "VECTORES", " ", "DE", " ", "2", " ", 
+    "COMPONENTES", " ", 
+    RowBox[{"(", 
+     RowBox[{"T", " ", "ESCALADA", " ", "y", " ", "SUS", " ", "ESCALDA"}], 
+     ")"}], " ", "PARA", " ", "REPRESENTARLOS"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"Graphic", "[", 
+     RowBox[{
+     "TC_", ",", "\[Nu]_", ",", "\[Gamma]_", ",", "T_", ",", "Sus_", ",", 
+      "L_"}], "]"}], ":=", 
+    RowBox[{"Transpose", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"EscT", "[", 
+        RowBox[{"TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T", ",", "L"}], 
+        "]"}], ",", 
+       RowBox[{"EscSus", "[", 
+        RowBox[{"\[Nu]", ",", "\[Gamma]", ",", "Sus", ",", "L"}], "]"}]}], 
+      "}"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "CREACI\[CapitalOAcute]N", " ", "DE", " ", "LA", " ", 
+    "GR\[CapitalAAcute]FICA"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"ListPlot", "[", 
+    RowBox[{
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Graphic", "[", 
+        RowBox[{
+        "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T10", ",", "Sus10", ",", 
+         "10"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Graphic", "[", 
+        RowBox[{
+        "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T20", ",", "Sus20", ",", 
+         "20"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Graphic", "[", 
+        RowBox[{
+        "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T30", ",", "Sus30", ",", 
+         "30"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Graphic", "[", 
+        RowBox[{
+        "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T40", ",", "Sus40", ",", 
+         "40"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Graphic", "[", 
+        RowBox[{
+        "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T50", ",", "Sus50", ",", 
+         "50"}], "]"}]}], "\[IndentingNewLine]", "}"}], ",", 
+     RowBox[{"PlotRange", "->", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "5"}], ",", "7"}], "}"}], ",", "All"}], "}"}]}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", "Thick"}], ",", " ", 
+     RowBox[{"PlotTheme", "\[Rule]", "\"\<Scientific\>\""}], ",", " ", 
+     RowBox[{"FrameLabel", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Temperatura\>\"", ",", " ", "\"\<Susceptibilidad\>\""}], 
+       "}"}]}], ",", " ", 
+     RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}], "\[IndentingNewLine]", ",", 
+   RowBox[{"\"\<\!\(\*SubscriptBox[\(T\), \(c\)]\)\>\"", "->", 
+    RowBox[{"{", 
+     RowBox[{"TC", ",", "2", ",", "3"}], "}"}]}], ",", 
+   RowBox[{"\"\<\[Nu]\>\"", "->", 
+    RowBox[{"{", 
+     RowBox[{"\[Nu]", ",", "0.7", ",", "1.2"}], "}"}]}], ",", 
+   RowBox[{"\"\<\[Gamma]\>\"", "->", 
+    RowBox[{"{", 
+     RowBox[{"\[Gamma]", ",", "1.5", ",", "2"}], "}"}]}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8925590357994423`*^9, 3.8925590446914372`*^9}, 
+   3.892559075203473*^9, {3.892559126886593*^9, 3.892559127765588*^9}, {
+   3.892559196087178*^9, 3.892559201629853*^9}},
+ CellLabel->
+  "In[460]:=",ExpressionUUID->"28323e13-e401-4039-801d-1ca23aeb500d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`TC$$ = 2.27, $CellContext`\[Gamma]$$ = 
+    1.766, $CellContext`\[Nu]$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
+      Hold[$CellContext`TC$$], 2, 3}, {
+      Hold[$CellContext`\[Nu]$$], 0.7, 1.2}, {
+      Hold[$CellContext`\[Gamma]$$], 1.5, 2}}, Typeset`size$$ = {
+    396.00000000000006`, {124., 130.17488978743341`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`TC$43112$$ = False, $CellContext`\[Nu]$43113$$ = 
+    0, $CellContext`\[Gamma]$43114$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`TC$$ = 2, $CellContext`\[Gamma]$$ = 
+        1.5, $CellContext`\[Nu]$$ = 0.7}, "ControllerVariables" :> {
+        Hold[$CellContext`TC$$, $CellContext`TC$43112$$, False], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$43113$$, 0], 
+        Hold[$CellContext`\[Gamma]$$, $CellContext`\[Gamma]$43114$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ListPlot[{
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T10, $CellContext`Sus10, 10], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T20, $CellContext`Sus20, 20], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T30, $CellContext`Sus30, 30], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T40, $CellContext`Sus40, 40], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]}, 
+        PlotRange -> {{-5, 7}, All}, PlotStyle -> Thick, PlotTheme -> 
+        "Scientific", FrameLabel -> {"Temperatura", "Susceptibilidad"}, Axes -> 
+        True], "Specifications" :> {
+       "\!\(\*SubscriptBox[\(T\), \(c\)]\)" -> {$CellContext`TC$$, 2, 3}, 
+        "\[Nu]" -> {$CellContext`\[Nu]$$, 0.7, 1.2}, 
+        "\[Gamma]" -> {$CellContext`\[Gamma]$$, 1.5, 2}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{708., {157.84743648138829`, 164.15256351861171`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Input",
+ CellChangeTimes->{3.892559213262411*^9},
+ CellLabel->
+  "In[480]:=",ExpressionUUID->"08989c23-0cc7-4bf4-9455-211116ae6fd0"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`TC$$ = 2.27, $CellContext`\[Gamma]$$ = 
+    1.77, $CellContext`\[Nu]$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`TC$$], 2.27}, 2, 3}, {{
+       Hold[$CellContext`\[Nu]$$], 1}, 0.7, 1.2}, {{
+       Hold[$CellContext`\[Gamma]$$], 1.77}, 1.5, 2}}, Typeset`size$$ = {
+    396.00000000000006`, {124., 130.17488978743347`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`TC$44037$$ = False, $CellContext`\[Nu]$44038$$ = 
+    0, $CellContext`\[Gamma]$44039$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`TC$$ = 2.27, $CellContext`\[Gamma]$$ = 
+        1.77, $CellContext`\[Nu]$$ = 1}, "ControllerVariables" :> {
+        Hold[$CellContext`TC$$, $CellContext`TC$44037$$, False], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$44038$$, 0], 
+        Hold[$CellContext`\[Gamma]$$, $CellContext`\[Gamma]$44039$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ListPlot[{
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T10, $CellContext`Sus10, 10], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T20, $CellContext`Sus20, 20], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T30, $CellContext`Sus30, 30], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T40, $CellContext`Sus40, 40], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]}, 
+        PlotRange -> {{-5, 7}, All}, PlotStyle -> Thick, PlotTheme -> 
+        "Scientific", FrameLabel -> {"Temperatura", "Susceptibilidad"}, Axes -> 
+        True], "Specifications" :> {
+       "\!\(\*SubscriptBox[\(T\), \(c\)]\)" -> {{$CellContext`TC$$, 2.27}, 2, 
+          3}, "\[Nu]" -> {{$CellContext`\[Nu]$$, 1}, 0.7, 1.2}, 
+        "\[Gamma]" -> {{$CellContext`\[Gamma]$$, 1.77}, 1.5, 2}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{708., {157.84743648138829`, 164.15256351861171`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.892559213787515*^9},
+ CellLabel->
+  "Out[480]=",ExpressionUUID->"8d11015b-c394-41a0-af38-800e58f5ca77"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`TC$$ = 2.27, $CellContext`\[Gamma]$$ = 
+    1.771, $CellContext`\[Nu]$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
+      Hold[$CellContext`TC$$], 2, 3}, {
+      Hold[$CellContext`\[Nu]$$], 0.7, 1.2}, {
+      Hold[$CellContext`\[Gamma]$$], 1.5, 2}}, Typeset`size$$ = {
+    396.00000000000006`, {124., 130.17488978743347`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`TC$38769$$ = False, $CellContext`\[Nu]$38770$$ = 
+    0, $CellContext`\[Gamma]$38771$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`TC$$ = 2, $CellContext`\[Gamma]$$ = 
+        1.5, $CellContext`\[Nu]$$ = 0.7}, "ControllerVariables" :> {
+        Hold[$CellContext`TC$$, $CellContext`TC$38769$$, False], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$38770$$, 0], 
+        Hold[$CellContext`\[Gamma]$$, $CellContext`\[Gamma]$38771$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ListPlot[{
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T10, $CellContext`Sus10, 10], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T20, $CellContext`Sus20, 20], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T30, $CellContext`Sus30, 30], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T40, $CellContext`Sus40, 40], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]}, 
+        PlotRange -> {{-5, 7}, All}, PlotStyle -> Thick, PlotTheme -> 
+        "Scientific", 
+        FrameLabel -> {
+         "Temperatura", "Magnetizaci\[OAcute]n en valor absoluta"}, Axes -> 
+        True], "Specifications" :> {
+       "\!\(\*SubscriptBox[\(T\), \(c\)]\)" -> {$CellContext`TC$$, 2, 3}, 
+        "\[Nu]" -> {$CellContext`\[Nu]$$, 0.7, 1.2}, 
+        "\[Gamma]" -> {$CellContext`\[Gamma]$$, 1.5, 2}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{708., {157.84743648138829`, 164.15256351861171`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Input",
+ CellChangeTimes->{3.892559138640946*^9},
+ CellLabel->
+  "In[459]:=",ExpressionUUID->"2bc17c0b-933e-4b7c-b60b-bd01938f18c0"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`TC$$ = 2.27, $CellContext`\[Gamma]$$ = 
+    1.5, $CellContext`\[Nu]$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`TC$$], 2.27}, 2, 3}, {{
+       Hold[$CellContext`\[Nu]$$], 1}, 0.7, 1.2}, {
+      Hold[$CellContext`\[Gamma]$$], 1.5, 2}}, Typeset`size$$ = {
+    396.00000000000006`, {124., 130.17488978743341`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`TC$39644$$ = False, $CellContext`\[Nu]$39645$$ = 
+    0, $CellContext`\[Gamma]$39646$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`TC$$ = 2.27, $CellContext`\[Gamma]$$ = 
+        1.5, $CellContext`\[Nu]$$ = 1}, "ControllerVariables" :> {
+        Hold[$CellContext`TC$$, $CellContext`TC$39644$$, False], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$39645$$, 0], 
+        Hold[$CellContext`\[Gamma]$$, $CellContext`\[Gamma]$39646$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ListPlot[{
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T10, $CellContext`Sus10, 10], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T20, $CellContext`Sus20, 20], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T30, $CellContext`Sus30, 30], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T40, $CellContext`Sus40, 40], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]}, 
+        PlotRange -> {{-5, 7}, All}, PlotStyle -> Thick, PlotTheme -> 
+        "Scientific", 
+        FrameLabel -> {
+         "Temperatura", "Magnetizaci\[OAcute]n en valor absoluta"}, Axes -> 
+        True], "Specifications" :> {
+       "\!\(\*SubscriptBox[\(T\), \(c\)]\)" -> {{$CellContext`TC$$, 2.27}, 2, 
+          3}, "\[Nu]" -> {{$CellContext`\[Nu]$$, 1}, 0.7, 1.2}, 
+        "\[Gamma]" -> {$CellContext`\[Gamma]$$, 1.5, 2}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{708., {157.84743648138829`, 164.15256351861171`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.8925591390747805`*^9},
+ CellLabel->
+  "Out[459]=",ExpressionUUID->"ce46aba4-0b42-4e77-b273-a67592e353e3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`TC$$ = 
+    2.27, $CellContext`\[Gamma]$$ = -0.43599999999999994`, \
+$CellContext`\[Nu]$$ = 1, Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
+      Hold[$CellContext`TC$$], 2, 3}, {
+      Hold[$CellContext`\[Nu]$$], 0.7, 1.2}, {
+      Hold[$CellContext`\[Gamma]$$], -2, 0}}, Typeset`size$$ = {
+    396.00000000000006`, {120., 124.90329929714937`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`TC$32249$$ = False, $CellContext`\[Nu]$32250$$ = 
+    0, $CellContext`\[Gamma]$32251$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`TC$$ = 
+        2, $CellContext`\[Gamma]$$ = -2, $CellContext`\[Nu]$$ = 0.7}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`TC$$, $CellContext`TC$32249$$, False], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$32250$$, 0], 
+        Hold[$CellContext`\[Gamma]$$, $CellContext`\[Gamma]$32251$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ListPlot[{
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T10, $CellContext`Sus10, 10], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T20, $CellContext`Sus20, 20], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T30, $CellContext`Sus30, 30], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T40, $CellContext`Sus40, 40], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]}, 
+        PlotRange -> {{-5, 7}, All}, PlotStyle -> Thick, PlotTheme -> 
+        "Scientific", 
+        FrameLabel -> {
+         "Temperatura", "Magnetizaci\[OAcute]n en valor absoluta"}, Axes -> 
+        True], "Specifications" :> {
+       "\!\(\*SubscriptBox[\(T\), \(c\)]\)" -> {$CellContext`TC$$, 2, 3}, 
+        "\[Nu]" -> {$CellContext`\[Nu]$$, 0.7, 1.2}, 
+        "\[Gamma]" -> {$CellContext`\[Gamma]$$, -2, 0}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{708., {152.84743648138829`, 159.15256351861171`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Input",
+ CellChangeTimes->{3.892559052031295*^9},
+ CellLabel->
+  "In[418]:=",ExpressionUUID->"fbbbedba-840d-49ec-9ea3-d0af9ce3075d"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`TC$$ = 
+    2.27, $CellContext`\[Gamma]$$ = -2, $CellContext`\[Nu]$$ = 1, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`TC$$], 2.27}, 2, 3}, {{
+       Hold[$CellContext`\[Nu]$$], 1}, 0.7, 1.2}, {
+      Hold[$CellContext`\[Gamma]$$], -2, 0}}, Typeset`size$$ = {
+    396.00000000000006`, {119., 123.94905677503539`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`TC$33293$$ = False, $CellContext`\[Nu]$33294$$ = 
+    0, $CellContext`\[Gamma]$33295$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`TC$$ = 
+        2.27, $CellContext`\[Gamma]$$ = -2, $CellContext`\[Nu]$$ = 1}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`TC$$, $CellContext`TC$33293$$, False], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$33294$$, 0], 
+        Hold[$CellContext`\[Gamma]$$, $CellContext`\[Gamma]$33295$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ListPlot[{
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T10, $CellContext`Sus10, 10], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T20, $CellContext`Sus20, 20], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T30, $CellContext`Sus30, 30], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T40, $CellContext`Sus40, 40], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]}, 
+        PlotRange -> {{-5, 7}, All}, PlotStyle -> Thick, PlotTheme -> 
+        "Scientific", 
+        FrameLabel -> {
+         "Temperatura", "Magnetizaci\[OAcute]n en valor absoluta"}, Axes -> 
+        True], "Specifications" :> {
+       "\!\(\*SubscriptBox[\(T\), \(c\)]\)" -> {{$CellContext`TC$$, 2.27}, 2, 
+          3}, "\[Nu]" -> {{$CellContext`\[Nu]$$, 1}, 0.7, 1.2}, 
+        "\[Gamma]" -> {$CellContext`\[Gamma]$$, -2, 0}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{708., {151.84743648138829`, 158.15256351861171`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.892559052538307*^9, 3.892559057624193*^9}},
+ CellLabel->
+  "Out[418]=",ExpressionUUID->"cb93a1c8-4ed1-4587-8abf-4d901d3f76c0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"SetDirectory", "[", 
+    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], "\n", 
+  RowBox[{"(*", 
+   RowBox[{
+   "IMPORTAR", " ", "ARCHIVOS", " ", "Y", " ", "EXTRAER", " ", "T", " ", "Y", 
+    " ", "SUS"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL10", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<Promedios-N-10_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL20", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<Promedios-N-20_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL30", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<Promedios-N-30_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL40", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<Promedios-N-40_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL50", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<Promedios-N-50_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T10", "=", 
+   RowBox[{"DataL10", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sus10", " ", "=", " ", 
+   RowBox[{"DataL10", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "6"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T20", "=", 
+   RowBox[{"DataL20", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sus20", " ", "=", " ", 
+   RowBox[{"DataL20", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "6"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T30", "=", 
+   RowBox[{"DataL30", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sus30", " ", "=", " ", 
+   RowBox[{"DataL30", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "6"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T40", "=", 
+   RowBox[{"DataL40", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sus40", " ", "=", " ", 
+   RowBox[{"DataL40", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "6"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T50", "=", 
+   RowBox[{"DataL50", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Sus50", " ", "=", " ", 
+    RowBox[{"DataL50", "[", 
+     RowBox[{"[", 
+      RowBox[{"All", ",", "6"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"FUNCIONES", " ", "DE", " ", "ESCALADO"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"EscT", "[", 
+    RowBox[{"TC_", ",", "\[Nu]_", ",", "\[Gamma]_", ",", "T_", ",", "L_"}], 
+    "]"}], ":=", 
+   RowBox[{
+    SuperscriptBox["L", 
+     FractionBox["1", "\[Nu]"]], " ", 
+    FractionBox[
+     RowBox[{"T", "-", "TC"}], "TC"]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"EscSus", "[", 
+     RowBox[{"\[Nu]_", ",", "\[Gamma]_", ",", "Sus_", ",", "L_"}], "]"}], ":=", 
+    RowBox[{
+     SuperscriptBox["L", 
+      FractionBox[
+       RowBox[{"-", "\[Gamma]"}], "\[Nu]"]], " ", "Sus"}]}], ";"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "FUNCI\[CapitalOAcute]N", " ", "QUE", " ", "CREA", " ", "UN", " ", 
+    "VECTOR", " ", "DE", " ", "N", " ", "VECTORES", " ", "DE", " ", "2", " ", 
+    "COMPONENTES", " ", 
+    RowBox[{"(", 
+     RowBox[{"T", " ", "ESCALADA", " ", "y", " ", "SUS", " ", "ESCALDA"}], 
+     ")"}], " ", "PARA", " ", "REPRESENTARLOS"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"Graphic", "[", 
+     RowBox[{
+     "TC_", ",", "\[Nu]_", ",", "\[Gamma]_", ",", "T_", ",", "Sus_", ",", 
+      "L_"}], "]"}], ":=", 
+    RowBox[{"Transpose", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"EscT", "[", 
+        RowBox[{"TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T", ",", "L"}], 
+        "]"}], ",", 
+       RowBox[{"EscSus", "[", 
+        RowBox[{"\[Nu]", ",", "\[Gamma]", ",", "Sus", ",", "L"}], "]"}]}], 
+      "}"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "CREACI\[CapitalOAcute]N", " ", "DE", " ", "LA", " ", 
+    "GR\[CapitalAAcute]FICA"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"ListPlot", "[", 
+    RowBox[{
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Graphic", "[", 
+        RowBox[{
+        "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T10", ",", "Sus10", ",", 
+         "10"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Graphic", "[", 
+        RowBox[{
+        "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T20", ",", "Sus20", ",", 
+         "20"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Graphic", "[", 
+        RowBox[{
+        "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T30", ",", "Sus30", ",", 
+         "30"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Graphic", "[", 
+        RowBox[{
+        "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T40", ",", "Sus40", ",", 
+         "40"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Graphic", "[", 
+        RowBox[{
+        "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T50", ",", "Sus50", ",", 
+         "50"}], "]"}]}], "\[IndentingNewLine]", "}"}], ",", 
+     RowBox[{"PlotRange", "->", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "5"}], ",", "7"}], "}"}], ",", "All"}], "}"}]}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", "Thick"}], ",", " ", 
+     RowBox[{"PlotTheme", "\[Rule]", "\"\<Scientific\>\""}], ",", " ", 
+     RowBox[{"FrameLabel", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Temperatura\>\"", ",", " ", "\"\<Energ\[IAcute]a\>\""}], 
+       "}"}]}], ",", " ", 
+     RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}], "\[IndentingNewLine]", ",", 
+   RowBox[{"\"\<\!\(\*SubscriptBox[\(T\), \(c\)]\)\>\"", "->", 
+    RowBox[{"{", 
+     RowBox[{"TC", ",", "2", ",", "3"}], "}"}]}], ",", 
+   RowBox[{"\"\<\[Nu]\>\"", "->", 
+    RowBox[{"{", 
+     RowBox[{"\[Nu]", ",", "0.7", ",", "1.2"}], "}"}]}], ",", 
+   RowBox[{"\"\<\[Gamma]\>\"", "->", 
+    RowBox[{"{", 
+     RowBox[{"\[Gamma]", ",", "1.5", ",", "2.5"}], "}"}]}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8925592876303616`*^9, 3.892559338336775*^9}},
+ CellLabel->
+  "In[523]:=",ExpressionUUID->"adfd7a4b-c9c3-4c7a-882d-acef71ae4018"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`TC$$ = 2.27, $CellContext`\[Gamma]$$ = 
+    2.0460000000000003`, $CellContext`\[Nu]$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
+      Hold[$CellContext`TC$$], 2, 3}, {
+      Hold[$CellContext`\[Nu]$$], 0.7, 1.2}, {
+      Hold[$CellContext`\[Gamma]$$], 1.5, 2.5}}, Typeset`size$$ = {
+    396.00000000000006`, {124., 130.21863168130258`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`TC$50261$$ = False, $CellContext`\[Nu]$50262$$ = 
+    0, $CellContext`\[Gamma]$50263$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`TC$$ = 2, $CellContext`\[Gamma]$$ = 
+        1.5, $CellContext`\[Nu]$$ = 0.7}, "ControllerVariables" :> {
+        Hold[$CellContext`TC$$, $CellContext`TC$50261$$, False], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$50262$$, 0], 
+        Hold[$CellContext`\[Gamma]$$, $CellContext`\[Gamma]$50263$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ListPlot[{
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T10, $CellContext`Sus10, 10], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T20, $CellContext`Sus20, 20], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T30, $CellContext`Sus30, 30], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T40, $CellContext`Sus40, 40], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]}, 
+        PlotRange -> {{-5, 7}, All}, PlotStyle -> Thick, PlotTheme -> 
+        "Scientific", FrameLabel -> {"Temperatura", "Energ\[IAcute]a"}, Axes -> 
+        True], "Specifications" :> {
+       "\!\(\*SubscriptBox[\(T\), \(c\)]\)" -> {$CellContext`TC$$, 2, 3}, 
+        "\[Nu]" -> {$CellContext`\[Nu]$$, 0.7, 1.2}, 
+        "\[Gamma]" -> {$CellContext`\[Gamma]$$, 1.5, 2.5}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{708., {157.84743648138829`, 164.15256351861171`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.892559339359558*^9, 3.8925593425378604`*^9}},
+ CellLabel->
+  "Out[542]=",ExpressionUUID->"c6602ccf-cc4b-490b-8c39-8e4200a1aa68"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`TC$$ = 2.27, $CellContext`\[Gamma]$$ = 
+    1.5, $CellContext`\[Nu]$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
+      Hold[$CellContext`TC$$], 2, 3}, {
+      Hold[$CellContext`\[Nu]$$], 0.7, 1.2}, {
+      Hold[$CellContext`\[Gamma]$$], 1.5, 2.5}}, Typeset`size$$ = {
+    396.00000000000006`, {124., 130.17488978743347`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`TC$48611$$ = False, $CellContext`\[Nu]$48612$$ = 
+    0, $CellContext`\[Gamma]$48613$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`TC$$ = 2, $CellContext`\[Gamma]$$ = 
+        1.5, $CellContext`\[Nu]$$ = 0.7}, "ControllerVariables" :> {
+        Hold[$CellContext`TC$$, $CellContext`TC$48611$$, False], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$48612$$, 0], 
+        Hold[$CellContext`\[Gamma]$$, $CellContext`\[Gamma]$48613$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ListPlot[{
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T10, $CellContext`Sus10, 10], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T20, $CellContext`Sus20, 20], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T30, $CellContext`Sus30, 30], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T40, $CellContext`Sus40, 40], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]}, 
+        PlotRange -> {{-5, 7}, All}, PlotStyle -> Thick, PlotTheme -> 
+        "Scientific", FrameLabel -> {"Temperatura", "Susceptibilidad"}, Axes -> 
+        True], "Specifications" :> {
+       "\!\(\*SubscriptBox[\(T\), \(c\)]\)" -> {$CellContext`TC$$, 2, 3}, 
+        "\[Nu]" -> {$CellContext`\[Nu]$$, 0.7, 1.2}, 
+        "\[Gamma]" -> {$CellContext`\[Gamma]$$, 1.5, 2.5}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{708., {157.84743648138829`, 164.15256351861171`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Input",
+ CellChangeTimes->{3.8925593244070406`*^9},
+ CellLabel->
+  "In[522]:=",ExpressionUUID->"869d9b0d-edb0-4eaf-b73e-4391f98ff76f"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`TC$$ = 2.27, $CellContext`\[Gamma]$$ = 
+    1.5, $CellContext`\[Nu]$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`TC$$], 2.27}, 2, 3}, {{
+       Hold[$CellContext`\[Nu]$$], 1}, 0.7, 1.2}, {
+      Hold[$CellContext`\[Gamma]$$], 1.5, 2.5}}, Typeset`size$$ = {
+    396.00000000000006`, {124., 130.17488978743347`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`TC$49655$$ = False, $CellContext`\[Nu]$49656$$ = 
+    0, $CellContext`\[Gamma]$49657$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`TC$$ = 2.27, $CellContext`\[Gamma]$$ = 
+        1.5, $CellContext`\[Nu]$$ = 1}, "ControllerVariables" :> {
+        Hold[$CellContext`TC$$, $CellContext`TC$49655$$, False], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$49656$$, 0], 
+        Hold[$CellContext`\[Gamma]$$, $CellContext`\[Gamma]$49657$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ListPlot[{
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T10, $CellContext`Sus10, 10], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T20, $CellContext`Sus20, 20], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T30, $CellContext`Sus30, 30], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T40, $CellContext`Sus40, 40], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]}, 
+        PlotRange -> {{-5, 7}, All}, PlotStyle -> Thick, PlotTheme -> 
+        "Scientific", FrameLabel -> {"Temperatura", "Susceptibilidad"}, Axes -> 
+        True], "Specifications" :> {
+       "\!\(\*SubscriptBox[\(T\), \(c\)]\)" -> {{$CellContext`TC$$, 2.27}, 2, 
+          3}, "\[Nu]" -> {{$CellContext`\[Nu]$$, 1}, 0.7, 1.2}, 
+        "\[Gamma]" -> {$CellContext`\[Gamma]$$, 1.5, 2.5}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{708., {157.84743648138829`, 164.15256351861171`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.89255932480569*^9, 3.892559331017523*^9}},
+ CellLabel->
+  "Out[522]=",ExpressionUUID->"00ae6637-ae21-4c5f-977e-385e4367d6bb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"SetDirectory", "[", 
+    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], "\n", 
+  RowBox[{"(*", 
+   RowBox[{
+   "IMPORTAR", " ", "ARCHIVOS", " ", "Y", " ", "EXTRAER", " ", "T", " ", "Y", 
+    " ", "SUS"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL10", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<Promedios-N-10_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL20", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<Promedios-N-20_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL30", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<Promedios-N-30_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL40", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<Promedios-N-40_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL50", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<Promedios-N-50_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T10", "=", 
+   RowBox[{"DataL10", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sus10", " ", "=", " ", 
+   RowBox[{"DataL10", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "8"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T20", "=", 
+   RowBox[{"DataL20", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sus20", " ", "=", " ", 
+   RowBox[{"DataL20", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "8"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T30", "=", 
+   RowBox[{"DataL30", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sus30", " ", "=", " ", 
+   RowBox[{"DataL30", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "8"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T40", "=", 
+   RowBox[{"DataL40", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sus40", " ", "=", " ", 
+   RowBox[{"DataL40", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "8"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T50", "=", 
+   RowBox[{"DataL50", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Sus50", " ", "=", " ", 
+    RowBox[{"DataL50", "[", 
+     RowBox[{"[", 
+      RowBox[{"All", ",", "8"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"FUNCIONES", " ", "DE", " ", "ESCALADO"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"EscT", "[", 
+    RowBox[{"TC_", ",", "\[Nu]_", ",", "\[Gamma]_", ",", "T_", ",", "L_"}], 
+    "]"}], ":=", 
+   RowBox[{
+    SuperscriptBox["L", 
+     FractionBox["1", "\[Nu]"]], " ", 
+    FractionBox[
+     RowBox[{"T", "-", "TC"}], "TC"]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"EscSus", "[", 
+     RowBox[{"\[Nu]_", ",", "\[Gamma]_", ",", "Sus_", ",", "L_"}], "]"}], ":=", 
+    RowBox[{
+     SuperscriptBox["L", 
+      FractionBox[
+       RowBox[{"-", "\[Gamma]"}], "\[Nu]"]], " ", "Sus"}]}], ";"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "FUNCI\[CapitalOAcute]N", " ", "QUE", " ", "CREA", " ", "UN", " ", 
+    "VECTOR", " ", "DE", " ", "N", " ", "VECTORES", " ", "DE", " ", "2", " ", 
+    "COMPONENTES", " ", 
+    RowBox[{"(", 
+     RowBox[{"T", " ", "ESCALADA", " ", "y", " ", "SUS", " ", "ESCALDA"}], 
+     ")"}], " ", "PARA", " ", "REPRESENTARLOS"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"Graphic", "[", 
+     RowBox[{
+     "TC_", ",", "\[Nu]_", ",", "\[Gamma]_", ",", "T_", ",", "Sus_", ",", 
+      "L_"}], "]"}], ":=", 
+    RowBox[{"Transpose", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"EscT", "[", 
+        RowBox[{"TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T", ",", "L"}], 
+        "]"}], ",", 
+       RowBox[{"EscSus", "[", 
+        RowBox[{"\[Nu]", ",", "\[Gamma]", ",", "Sus", ",", "L"}], "]"}]}], 
+      "}"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "CREACI\[CapitalOAcute]N", " ", "DE", " ", "LA", " ", 
+    "GR\[CapitalAAcute]FICA"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"ListPlot", "[", 
+    RowBox[{
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Graphic", "[", 
+        RowBox[{
+        "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T10", ",", "Sus10", ",", 
+         "10"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Graphic", "[", 
+        RowBox[{
+        "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T20", ",", "Sus20", ",", 
+         "20"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Graphic", "[", 
+        RowBox[{
+        "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T30", ",", "Sus30", ",", 
+         "30"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Graphic", "[", 
+        RowBox[{
+        "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T40", ",", "Sus40", ",", 
+         "40"}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Graphic", "[", 
+        RowBox[{
+        "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T50", ",", "Sus50", ",", 
+         "50"}], "]"}]}], "\[IndentingNewLine]", "}"}], ",", 
+     RowBox[{"PlotRange", "->", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "5"}], ",", "7"}], "}"}], ",", "All"}], "}"}]}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", "Thick"}], ",", " ", 
+     RowBox[{"PlotTheme", "\[Rule]", "\"\<Scientific\>\""}], ",", " ", 
+     RowBox[{"FrameLabel", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Temperatura\>\"", ",", " ", 
+        "\"\<Capacidad calor\[IAcute]fica\>\""}], "}"}]}], ",", " ", 
+     RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}], "\[IndentingNewLine]", ",", 
+   RowBox[{"\"\<\!\(\*SubscriptBox[\(T\), \(c\)]\)\>\"", "->", 
+    RowBox[{"{", 
+     RowBox[{"TC", ",", "2", ",", "3"}], "}"}]}], ",", 
+   RowBox[{"\"\<\[Nu]\>\"", "->", 
+    RowBox[{"{", 
+     RowBox[{"\[Nu]", ",", "0.7", ",", "1.2"}], "}"}]}], ",", 
+   RowBox[{"\"\<\[Gamma]\>\"", "->", 
+    RowBox[{"{", 
+     RowBox[{"\[Gamma]", ",", "0", ",", "0.5"}], "}"}]}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8925594057965717`*^9, 3.892559466193454*^9}},
+ CellLabel->
+  "In[583]:=",ExpressionUUID->"ec575ad5-6521-4fa9-ba2d-c4414438e18b"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`TC$$ = 2.27, $CellContext`\[Gamma]$$ = 
+    0.301, $CellContext`\[Nu]$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
+      Hold[$CellContext`TC$$], 2, 3}, {
+      Hold[$CellContext`\[Nu]$$], 0.7, 1.2}, {
+      Hold[$CellContext`\[Gamma]$$], 0, 0.5}}, Typeset`size$$ = {
+    396.00000000000006`, {127., 132.3162453090922}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`TC$59580$$ = False, $CellContext`\[Nu]$59581$$ = 
+    0, $CellContext`\[Gamma]$59582$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`TC$$ = 2, $CellContext`\[Gamma]$$ = 
+        0, $CellContext`\[Nu]$$ = 0.7}, "ControllerVariables" :> {
+        Hold[$CellContext`TC$$, $CellContext`TC$59580$$, False], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$59581$$, 0], 
+        Hold[$CellContext`\[Gamma]$$, $CellContext`\[Gamma]$59582$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ListPlot[{
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T10, $CellContext`Sus10, 10], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T20, $CellContext`Sus20, 20], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T30, $CellContext`Sus30, 30], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T40, $CellContext`Sus40, 40], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]}, 
+        PlotRange -> {{-5, 7}, All}, PlotStyle -> Thick, PlotTheme -> 
+        "Scientific", 
+        FrameLabel -> {"Temperatura", "Capacidad calor\[IAcute]fica"}, Axes -> 
+        True], "Specifications" :> {
+       "\!\(\*SubscriptBox[\(T\), \(c\)]\)" -> {$CellContext`TC$$, 2, 3}, 
+        "\[Nu]" -> {$CellContext`\[Nu]$$, 0.7, 1.2}, 
+        "\[Gamma]" -> {$CellContext`\[Gamma]$$, 0, 0.5}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{708., {159.84743648138829`, 166.15256351861171`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.892559425641903*^9, 3.8925594728879375`*^9}},
+ CellLabel->
+  "Out[602]=",ExpressionUUID->"a5f306b2-af49-48be-9391-7c9ac5d32ea8"]
 }, Open  ]]
 },
-WindowSize->{1428., 765.75},
+WindowSize->{949, 497},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 Magnification:>1.1 Inherited,
 FrontEndVersion->"12.3 para Microsoft Windows (64-bit) (July 9, 2021)",
@@ -566,15 +1986,43 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
+Cell[558, 20, 8581, 216, 1091, "Input",ExpressionUUID->"66ecde10-4f3b-4dc3-a046-0444deb14d0b"],
 Cell[CellGroupData[{
-Cell[580, 22, 7351, 197, 1032, "Input",ExpressionUUID->"66ecde10-4f3b-4dc3-a046-0444deb14d0b"],
-Cell[7934, 221, 423, 10, 30, "Message",ExpressionUUID->"cb3daba0-3910-4da3-a956-94823a1c412b"],
-Cell[8360, 233, 423, 10, 30, "Message",ExpressionUUID->"5c4d284f-96cb-4085-88b4-c041d23c06e3"],
-Cell[8786, 245, 3449, 60, 408, "Output",ExpressionUUID->"28125a2a-30f4-4fd2-b938-e243021c2167"]
+Cell[9164, 240, 3233, 60, 340, InheritFromParent,ExpressionUUID->"f274d2e9-7b79-495a-be0f-47c00c425434"],
+Cell[12400, 302, 3290, 60, 344, "Output",ExpressionUUID->"dd20038e-24a0-4dd8-a9c3-f62d456c3bf8"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12272, 310, 6653, 184, 950, "Input",ExpressionUUID->"2fd8cf15-9aa4-438b-9cf6-4f0f068c17e3"],
-Cell[18928, 496, 2801, 51, 430, "Output",ExpressionUUID->"a0a37388-5fa4-4d8e-8be7-d241d37deb32"]
+Cell[15727, 367, 6653, 184, 971, "Input",ExpressionUUID->"2fd8cf15-9aa4-438b-9cf6-4f0f068c17e3"],
+Cell[22383, 553, 2799, 51, 342, "Output",ExpressionUUID->"a0a37388-5fa4-4d8e-8be7-d241d37deb32"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25219, 609, 1886, 43, 230, "Input",ExpressionUUID->"ce68bbbb-000f-4398-8db7-f6a7abf7c43b"],
+Cell[27108, 654, 4586, 94, 286, "Output",ExpressionUUID->"28bf28db-286f-4219-9dec-f792d2602f19"]
+}, Open  ]],
+Cell[31709, 751, 7452, 199, 1091, "Input",ExpressionUUID->"28323e13-e401-4039-801d-1ca23aeb500d"],
+Cell[CellGroupData[{
+Cell[39186, 954, 3183, 57, 338, InheritFromParent,ExpressionUUID->"08989c23-0cc7-4bf4-9455-211116ae6fd0"],
+Cell[42372, 1013, 3232, 57, 342, "Output",ExpressionUUID->"8d11015b-c394-41a0-af38-800e58f5ca77"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45641, 1075, 3226, 59, 338, InheritFromParent,ExpressionUUID->"2bc17c0b-933e-4b7c-b60b-bd01938f18c0"],
+Cell[48870, 1136, 3258, 59, 342, "Output",ExpressionUUID->"ce46aba4-0b42-4e77-b273-a67592e353e3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[52165, 1200, 3243, 60, 328, InheritFromParent,ExpressionUUID->"fbbbedba-840d-49ec-9ea3-d0af9ce3075d"],
+Cell[55411, 1262, 3283, 60, 330, "Output",ExpressionUUID->"cb93a1c8-4ed1-4587-8abf-4d901d3f76c0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[58731, 1327, 7330, 197, 1091, "Input",ExpressionUUID->"adfd7a4b-c9c3-4c7a-882d-acef71ae4018"],
+Cell[66064, 1526, 3228, 57, 363, "Output",ExpressionUUID->"c6602ccf-cc4b-490b-8c39-8e4200a1aa68"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[69329, 1588, 3187, 57, 338, InheritFromParent,ExpressionUUID->"869d9b0d-edb0-4eaf-b73e-4391f98ff76f"],
+Cell[72519, 1647, 3240, 57, 342, "Output",ExpressionUUID->"00ae6637-ae21-4c5f-977e-385e4367d6bb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[75796, 1709, 7350, 198, 1091, "Input",ExpressionUUID->"ec575ad5-6521-4fa9-ba2d-c4414438e18b"],
+Cell[83149, 1909, 3228, 58, 346, "Output",ExpressionUUID->"a5f306b2-af49-48be-9391-7c9ac5d32ea8"]
 }, Open  ]]
 }
 ]
