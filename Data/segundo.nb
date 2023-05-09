@@ -10,60 +10,58 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      7921,        231]
-NotebookOptionsPosition[      7563,        217]
-NotebookOutlinePosition[      7966,        233]
-CellTagsIndexPosition[      7923,        230]
+NotebookDataLength[     22682,        574]
+NotebookOptionsPosition[     21745,        550]
+NotebookOutlinePosition[     22176,        567]
+CellTagsIndexPosition[     22133,        564]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
   RowBox[{
    RowBox[{"SetDirectory", "[", 
-    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], "\n", 
+    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], 
+  "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{
    "IMPORTAR", " ", "ARCHIVOS", " ", "Y", " ", "EXTRAER", " ", "T", " ", "Y", 
-    " ", "SUS"}], "*)"}]}], "\[IndentingNewLine]", 
+    " ", "SUS"}], "*)"}]}], "\n", 
  RowBox[{
   RowBox[{"DataL10", "=", 
    RowBox[{"Import", "[", 
-    RowBox[{
-    "\"\<Data\\\\Promedios-N-10_Nmed-300.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+    RowBox[{"\"\<GraphSUS_N-10_Nmed-300000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
      RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
      RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"DataL20", "=", 
    RowBox[{"Import", "[", 
-    RowBox[{
-    "\"\<Data\\\\Promedios-N-20_Nmed-300.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+    RowBox[{"\"\<GraphSUS_N-20_Nmed-300000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
      RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
      RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"DataL30", "=", 
    RowBox[{"Import", "[", 
-    RowBox[{
-    "\"\<Data\\\\Promedios-N-30_Nmed-300.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+    RowBox[{"\"\<GraphSUS_N-30_Nmed-300000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
      RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
      RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"DataL40", "=", 
    RowBox[{"Import", "[", 
-    RowBox[{
-    "\"\<Data\\\\Promedios-N-40_Nmed-300.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+    RowBox[{"\"\<GraphSUS_N-40_Nmed-300000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
      RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
      RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"DataL50", "=", 
    RowBox[{"Import", "[", 
-    RowBox[{
-    "\"\<Data\\\\Promedios-N-50_Nmed-300.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+    RowBox[{"\"\<GraphSUS_N-50_Nmed-300000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
      RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
      RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
@@ -201,7 +199,7 @@ Cell[BoxData[{
        RowBox[{
         RowBox[{"{", 
          RowBox[{
-          RowBox[{"-", "4"}], ",", "6"}], "}"}], ",", "All"}], "}"}]}], ",", 
+          RowBox[{"-", "5"}], ",", "7"}], "}"}], ",", "All"}], "}"}]}], ",", 
      RowBox[{"PlotStyle", "\[Rule]", "Thick"}]}], "]"}], 
    "\[IndentingNewLine]", ",", 
    RowBox[{"\"\<\!\(\*SubscriptBox[\(T\), \(c\)]\)\>\"", "->", 
@@ -212,11 +210,347 @@ Cell[BoxData[{
      RowBox[{"\[Nu]", ",", "0.7", ",", "1.2"}], "}"}]}], ",", 
    RowBox[{"\"\<\[Gamma]\>\"", "->", 
     RowBox[{"{", 
-     RowBox[{"\[Gamma]", ",", "1.1", ",", "1.8"}], "}"}]}]}], "]"}]}], "Input",\
-ExpressionUUID->"66ecde10-4f3b-4dc3-a046-0444deb14d0b"]
+     RowBox[{"\[Gamma]", ",", "1.1", ",", "1.8"}], "}"}]}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8915987214374866`*^9, 3.891598729112107*^9}, {
+   3.891598776399809*^9, 3.8915987881866064`*^9}, {3.8915988294532948`*^9, 
+   3.8915988365836945`*^9}, {3.8915989897410808`*^9, 3.891598991533006*^9}, {
+   3.8917488249977655`*^9, 3.8917488321247587`*^9}, {3.8917488696777186`*^9, 
+   3.891748927523987*^9}, 3.891748966232729*^9, {3.8917494407040825`*^9, 
+   3.891749470906606*^9}},ExpressionUUID->"66ecde10-4f3b-4dc3-a046-\
+0444deb14d0b"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Symbol", "argx", 
+   "\"\\!\\(\\*RowBox[{\\\"Symbol\\\"}]\\) called with \\!\\(\\*RowBox[{\\\"0\
+\\\"}]\\) arguments; 1 argument is expected.\"", 2, 8, 1, 
+   23804046021138719553, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8917494588131557`*^9},
+ CellLabel->
+  "Durante la evaluaci\[OAcute]n de \
+In[1]:=",ExpressionUUID->"cb3daba0-3910-4da3-a956-94823a1c412b"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Symbol", "argx", 
+   "\"\\!\\(\\*RowBox[{\\\"Symbol\\\"}]\\) called with \\!\\(\\*RowBox[{\\\"0\
+\\\"}]\\) arguments; 1 argument is expected.\"", 2, 9, 2, 
+   23804046021138719553, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8917494588709283`*^9},
+ CellLabel->
+  "Durante la evaluaci\[OAcute]n de \
+In[1]:=",ExpressionUUID->"5c4d284f-96cb-4085-88b4-c041d23c06e3"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`TC$$ = 2.351, $CellContext`\[Gamma]$$ = 
+    1.1, $CellContext`\[Nu]$$ = 0.7, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
+      Hold[$CellContext`TC$$], 2, 3}, {
+      Hold[$CellContext`\[Nu]$$], 0.7, 1.2}, {
+      Hold[$CellContext`\[Gamma]$$], 1.1, 1.8}}, Typeset`size$$ = {
+    396.00000000000006`, {120., 125.16162215733345`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`TC$8122$$ = False, $CellContext`\[Nu]$8123$$ = 
+    0, $CellContext`\[Gamma]$8124$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`TC$$ = 2, $CellContext`\[Gamma]$$ = 
+        1.1, $CellContext`\[Nu]$$ = 0.7}, "ControllerVariables" :> {
+        Hold[$CellContext`TC$$, $CellContext`TC$8122$$, False], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$8123$$, 0], 
+        Hold[$CellContext`\[Gamma]$$, $CellContext`\[Gamma]$8124$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ListPlot[{
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T10, $CellContext`Sus10, 10], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T20, $CellContext`Sus20, 20], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T30, $CellContext`Sus30, 30], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T40, $CellContext`Sus40, 40], 
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]}, 
+        PlotRange -> {{-5, 7}, All}, PlotStyle -> Thick], 
+      "Specifications" :> {
+       "\!\(\*SubscriptBox[\(T\), \(c\)]\)" -> {$CellContext`TC$$, 2, 3}, 
+        "\[Nu]" -> {$CellContext`\[Nu]$$, 0.7, 1.2}, 
+        "\[Gamma]" -> {$CellContext`\[Gamma]$$, 1.1, 1.8}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{452., {190.84743637626525`, 197.15256362373475`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.891598732399625*^9, 3.8915987435837164`*^9}, 
+   3.8915988061988525`*^9, 3.891598837649599*^9, 3.891598877491009*^9, {
+   3.8915989766637955`*^9, 3.8915989947732*^9}, {3.891748833579732*^9, 
+   3.8917488443614845`*^9}, 3.891748878955262*^9, {3.8917489288804903`*^9, 
+   3.891748931924432*^9}, {3.891748966720727*^9, 3.8917489705145435`*^9}, 
+   3.891749240243669*^9, 3.8917494596838694`*^9},
+ CellLabel->"Out[19]=",ExpressionUUID->"28125a2a-30f4-4fd2-b938-e243021c2167"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"SetDirectory", "[", 
+    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "IMPORTAR", " ", "ARCHIVOS", " ", "Y", " ", "EXTRAER", " ", "T", " ", "Y", 
+    " ", "SUS"}], "*)"}]}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"DataL10", "=", 
+    RowBox[{"Import", "[", 
+     RowBox[{
+     "\"\<Promedios-N-10_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+      RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+      RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"DataL20", "=", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<Promedios-N-20_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+       RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+       RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], ";"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL30", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<Promedios-N-30_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL40", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<Promedios-N-40_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DataL50", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<Promedios-N-50_Nmed-500000.csv\>\"", ",", "\"\<CSV\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "->", "1"}], ",", 
+     RowBox[{"Delimiter", "->", "\"\<,\>\""}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T10", "=", 
+   RowBox[{"DataL10", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sus10", " ", "=", " ", 
+   RowBox[{"DataL10", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T20", "=", 
+   RowBox[{"DataL20", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sus20", " ", "=", " ", 
+   RowBox[{"DataL20", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T30", "=", 
+   RowBox[{"DataL30", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sus30", " ", "=", " ", 
+   RowBox[{"DataL30", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T40", "=", 
+   RowBox[{"DataL40", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sus40", " ", "=", " ", 
+   RowBox[{"DataL40", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"T50", "=", 
+   RowBox[{"DataL50", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Sus50", " ", "=", " ", 
+    RowBox[{"DataL50", "[", 
+     RowBox[{"[", 
+      RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"FUNCIONES", " ", "DE", " ", "ESCALADO"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"EscT", "[", 
+    RowBox[{"TC_", ",", "\[Nu]_", ",", "\[Gamma]_", ",", "T_", ",", "L_"}], 
+    "]"}], ":=", 
+   RowBox[{
+    SuperscriptBox["L", 
+     FractionBox["1", "\[Nu]"]], " ", 
+    FractionBox[
+     RowBox[{"T", "-", "TC"}], "TC"]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"EscSus", "[", 
+     RowBox[{"\[Nu]_", ",", "\[Gamma]_", ",", "Sus_", ",", "L_"}], "]"}], ":=", 
+    RowBox[{
+     SuperscriptBox["L", 
+      FractionBox[
+       RowBox[{"-", "\[Gamma]"}], "\[Nu]"]], " ", "Sus"}]}], ";"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "FUNCI\[CapitalOAcute]N", " ", "QUE", " ", "CREA", " ", "UN", " ", 
+    "VECTOR", " ", "DE", " ", "N", " ", "VECTORES", " ", "DE", " ", "2", " ", 
+    "COMPONENTES", " ", 
+    RowBox[{"(", 
+     RowBox[{"T", " ", "ESCALADA", " ", "y", " ", "SUS", " ", "ESCALDA"}], 
+     ")"}], " ", "PARA", " ", "REPRESENTARLOS"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"Graphic", "[", 
+     RowBox[{
+     "TC_", ",", "\[Nu]_", ",", "\[Gamma]_", ",", "T_", ",", "Sus_", ",", 
+      "L_"}], "]"}], ":=", 
+    RowBox[{"Transpose", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"EscT", "[", 
+        RowBox[{"TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T", ",", "L"}], 
+        "]"}], ",", 
+       RowBox[{"EscSus", "[", 
+        RowBox[{"\[Nu]", ",", "\[Gamma]", ",", "Sus", ",", "L"}], "]"}]}], 
+      "}"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "CREACI\[CapitalOAcute]N", " ", "DE", " ", "LA", " ", 
+    "GR\[CapitalAAcute]FICA"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"ListPlot", "[", 
+    RowBox[{
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{"Graphic", "[", 
+       RowBox[{
+       "TC", ",", "\[Nu]", ",", "\[Gamma]", ",", "T10", ",", "Sus10", ",", 
+        "10"}], "]"}], "\[IndentingNewLine]", "\[IndentingNewLine]", "}"}], 
+     ",", 
+     RowBox[{"PlotRange", "->", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "5"}], ",", "7"}], "}"}], ",", "All"}], "}"}]}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", "Thick"}], ",", " ", 
+     RowBox[{"Joined", "->", "True"}]}], "]"}], "\[IndentingNewLine]", ",", 
+   RowBox[{"\"\<\!\(\*SubscriptBox[\(T\), \(c\)]\)\>\"", "->", 
+    RowBox[{"{", 
+     RowBox[{"TC", ",", "2", ",", "3"}], "}"}]}], ",", 
+   RowBox[{"\"\<\[Nu]\>\"", "->", 
+    RowBox[{"{", 
+     RowBox[{"\[Nu]", ",", "0.7", ",", "1.2"}], "}"}]}], ",", 
+   RowBox[{"\"\<\[Gamma]\>\"", "->", 
+    RowBox[{"{", 
+     RowBox[{"\[Gamma]", ",", "1.1", ",", "1.8"}], "}"}]}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8917490110423374`*^9, 3.8917490438880496`*^9}, {
+  3.89174907539797*^9, 3.891749091542262*^9}, {3.891749485587044*^9, 
+  3.891749489639986*^9}, {3.8917496017110806`*^9, 3.8917496152951603`*^9}, {
+  3.891749662552497*^9, 3.891749707046982*^9}},
+ CellLabel->
+  "In[154]:=",ExpressionUUID->"2fd8cf15-9aa4-438b-9cf6-4f0f068c17e3"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`TC$$ = 2.138, $CellContext`\[Gamma]$$ = 
+    1.6640000000000001`, $CellContext`\[Nu]$$ = 1.0150000000000001`, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
+      Hold[$CellContext`TC$$], 2, 3}, {
+      Hold[$CellContext`\[Nu]$$], 0.7, 1.2}, {
+      Hold[$CellContext`\[Gamma]$$], 1.1, 1.8}}, Typeset`size$$ = {
+    396.00000000000006`, {120., 125.16162215733354`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`TC$29590$$ = False, $CellContext`\[Nu]$29591$$ = 
+    0, $CellContext`\[Gamma]$29592$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`TC$$ = 2, $CellContext`\[Gamma]$$ = 
+        1.1, $CellContext`\[Nu]$$ = 0.7}, "ControllerVariables" :> {
+        Hold[$CellContext`TC$$, $CellContext`TC$29590$$, False], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$29591$$, 0], 
+        Hold[$CellContext`\[Gamma]$$, $CellContext`\[Gamma]$29592$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ListPlot[{
+         $CellContext`Graphic[$CellContext`TC$$, $CellContext`\[Nu]$$, \
+$CellContext`\[Gamma]$$, $CellContext`T10, $CellContext`Sus10, 10]}, 
+        PlotRange -> {{-5, 7}, All}, PlotStyle -> Thick, Joined -> True], 
+      "Specifications" :> {
+       "\!\(\*SubscriptBox[\(T\), \(c\)]\)" -> {$CellContext`TC$$, 2, 3}, 
+        "\[Nu]" -> {$CellContext`\[Nu]$$, 0.7, 1.2}, 
+        "\[Gamma]" -> {$CellContext`\[Gamma]$$, 1.1, 1.8}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{452., {190.84743637626525`, 197.15256362373475`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.891749031454186*^9, 3.8917490497426276`*^9}, {
+   3.8917490812928457`*^9, 3.8917490970670238`*^9}, {3.8917494767626867`*^9, 
+   3.8917494913942556`*^9}, 3.8917496163997183`*^9, 3.891749663666249*^9, {
+   3.8917496986909275`*^9, 3.8917497074693785`*^9}},
+ CellLabel->
+  "Out[172]=",ExpressionUUID->"a0a37388-5fa4-4d8e-8be7-d241d37deb32"]
+}, Open  ]]
 },
-WindowSize->{757., 388.5},
-WindowMargins->{{Automatic, 10.5}, {11, Automatic}},
+WindowSize->{1428., 765.75},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+Magnification:>1.1 Inherited,
 FrontEndVersion->"12.3 para Microsoft Windows (64-bit) (July 9, 2021)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"eba8b971-ee3c-41a5-aec5-92d688747ef5"
@@ -232,10 +566,17 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 7001, 195, 1150, "Input",ExpressionUUID->"66ecde10-4f3b-4dc3-a046-0444deb14d0b"]
+Cell[CellGroupData[{
+Cell[580, 22, 7351, 197, 1032, "Input",ExpressionUUID->"66ecde10-4f3b-4dc3-a046-0444deb14d0b"],
+Cell[7934, 221, 423, 10, 30, "Message",ExpressionUUID->"cb3daba0-3910-4da3-a956-94823a1c412b"],
+Cell[8360, 233, 423, 10, 30, "Message",ExpressionUUID->"5c4d284f-96cb-4085-88b4-c041d23c06e3"],
+Cell[8786, 245, 3449, 60, 408, "Output",ExpressionUUID->"28125a2a-30f4-4fd2-b938-e243021c2167"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12272, 310, 6653, 184, 950, "Input",ExpressionUUID->"2fd8cf15-9aa4-438b-9cf6-4f0f068c17e3"],
+Cell[18928, 496, 2801, 51, 430, "Output",ExpressionUUID->"a0a37388-5fa4-4d8e-8be7-d241d37deb32"]
+}, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
