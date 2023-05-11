@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     88990,       2022]
-NotebookOptionsPosition[     86393,       1970]
-NotebookOutlinePosition[     86819,       1987]
-CellTagsIndexPosition[     86776,       1984]
+NotebookDataLength[     89396,       2033]
+NotebookOptionsPosition[     86842,       1981]
+NotebookOutlinePosition[     87275,       1998]
+CellTagsIndexPosition[     87232,       1995]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -22,11 +22,12 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{
    RowBox[{"SetDirectory", "[", 
-    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], "\n", 
+    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], 
+  "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{
    "IMPORTAR", " ", "ARCHIVOS", " ", "Y", " ", "EXTRAER", " ", "T", " ", "Y", 
-    " ", "SUS"}], "*)"}]}], "\[IndentingNewLine]", 
+    " ", "SUS"}], "*)"}]}], "\n", 
  RowBox[{
   RowBox[{"DataL10", "=", 
    RowBox[{"Import", "[", 
@@ -242,8 +243,8 @@ Cell[BoxData[
  TagBox[
   StyleBox[
    DynamicModuleBox[{$CellContext`TC$$ = 
-    2.27, $CellContext`\[Gamma]$$ = -0.132, $CellContext`\[Nu]$$ = 1, 
-    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    2.2700000000000005`, $CellContext`\[Gamma]$$ = -0.13199999999999923`, \
+$CellContext`\[Nu]$$ = 1, Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
     Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
     1, Typeset`name$$ = "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
       Hold[$CellContext`TC$$], 2, 3}, {
@@ -296,7 +297,9 @@ $CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]},
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Input",
- CellChangeTimes->{3.8925589189376345`*^9},
+ CellChangeTimes->{
+  3.8925589189376345`*^9, {3.8926383890419827`*^9, 3.89263838979755*^9}, 
+   3.8926384213253727`*^9},
  CellLabel->
   "In[396]:=",ExpressionUUID->"f274d2e9-7b79-495a-be0f-47c00c425434"],
 
@@ -369,12 +372,11 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{
    RowBox[{"SetDirectory", "[", 
-    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], 
-  "\[IndentingNewLine]", 
+    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], "\n", 
   RowBox[{"(*", 
    RowBox[{
    "IMPORTAR", " ", "ARCHIVOS", " ", "Y", " ", "EXTRAER", " ", "T", " ", "Y", 
-    " ", "SUS"}], "*)"}]}], "\n", 
+    " ", "SUS"}], "*)"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"DataL10", "=", 
@@ -562,7 +564,7 @@ Cell[BoxData[
       Hold[$CellContext`TC$$], 2, 3}, {
       Hold[$CellContext`\[Nu]$$], 0.7, 1.2}, {
       Hold[$CellContext`\[Gamma]$$], 1.1, 1.8}}, Typeset`size$$ = {
-    396.00000000000006`, {125., 130.3194522141868}}, Typeset`update$$ = 0, 
+    396.00000000000006`, {125., 130.31945221418678`}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
     True, $CellContext`TC$29590$$ = False, $CellContext`\[Nu]$29591$$ = 
     0, $CellContext`\[Gamma]$29592$$ = 0}, 
@@ -956,14 +958,14 @@ Cell[BoxData[
  TagBox[
   StyleBox[
    DynamicModuleBox[{$CellContext`TC$$ = 2.27, $CellContext`\[Gamma]$$ = 
-    1.766, $CellContext`\[Nu]$$ = 1, Typeset`show$$ = True, 
+    1.7659999999999996`, $CellContext`\[Nu]$$ = 1, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
       Hold[$CellContext`TC$$], 2, 3}, {
       Hold[$CellContext`\[Nu]$$], 0.7, 1.2}, {
       Hold[$CellContext`\[Gamma]$$], 1.5, 2}}, Typeset`size$$ = {
-    396.00000000000006`, {124., 130.17488978743341`}}, Typeset`update$$ = 0, 
+    396.00000000000006`, {126., 131.57407672555786`}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
     True, $CellContext`TC$43112$$ = False, $CellContext`\[Nu]$43113$$ = 
     0, $CellContext`\[Gamma]$43114$$ = 0}, 
@@ -996,7 +998,7 @@ $CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]},
         "\[Nu]" -> {$CellContext`\[Nu]$$, 0.7, 1.2}, 
         "\[Gamma]" -> {$CellContext`\[Gamma]$$, 1.5, 2}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{708., {157.84743648138829`, 164.15256351861171`}},
+     ImageSizeCache->{708., {158.84743648138829`, 165.15256351861171`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1007,7 +1009,8 @@ $CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]},
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Input",
- CellChangeTimes->{3.892559213262411*^9},
+ CellChangeTimes->{
+  3.892559213262411*^9, {3.892638461485092*^9, 3.8926384621192865`*^9}},
  CellLabel->
   "In[480]:=",ExpressionUUID->"08989c23-0cc7-4bf4-9455-211116ae6fd0"],
 
@@ -1022,7 +1025,7 @@ Cell[BoxData[
        Hold[$CellContext`TC$$], 2.27}, 2, 3}, {{
        Hold[$CellContext`\[Nu]$$], 1}, 0.7, 1.2}, {{
        Hold[$CellContext`\[Gamma]$$], 1.77}, 1.5, 2}}, Typeset`size$$ = {
-    396.00000000000006`, {124., 130.17488978743347`}}, Typeset`update$$ = 0, 
+    396.00000000000006`, {126., 131.57407672555786`}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
     True, $CellContext`TC$44037$$ = False, $CellContext`\[Nu]$44038$$ = 
     0, $CellContext`\[Gamma]$44039$$ = 0}, 
@@ -1055,7 +1058,7 @@ $CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]},
           3}, "\[Nu]" -> {{$CellContext`\[Nu]$$, 1}, 0.7, 1.2}, 
         "\[Gamma]" -> {{$CellContext`\[Gamma]$$, 1.77}, 1.5, 2}}, 
       "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{708., {157.84743648138829`, 164.15256351861171`}},
+     ImageSizeCache->{708., {158.84743648138829`, 165.15256351861171`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1084,7 +1087,7 @@ Cell[BoxData[
       Hold[$CellContext`TC$$], 2, 3}, {
       Hold[$CellContext`\[Nu]$$], 0.7, 1.2}, {
       Hold[$CellContext`\[Gamma]$$], 1.5, 2}}, Typeset`size$$ = {
-    396.00000000000006`, {124., 130.17488978743347`}}, Typeset`update$$ = 0, 
+    396.00000000000006`, {126., 131.57407672555786`}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
     True, $CellContext`TC$38769$$ = False, $CellContext`\[Nu]$38770$$ = 
     0, $CellContext`\[Gamma]$38771$$ = 0}, 
@@ -1119,7 +1122,7 @@ $CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]},
         "\[Nu]" -> {$CellContext`\[Nu]$$, 0.7, 1.2}, 
         "\[Gamma]" -> {$CellContext`\[Gamma]$$, 1.5, 2}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{708., {157.84743648138829`, 164.15256351861171`}},
+     ImageSizeCache->{708., {158.84743648138829`, 165.15256351861171`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1145,7 +1148,7 @@ Cell[BoxData[
        Hold[$CellContext`TC$$], 2.27}, 2, 3}, {{
        Hold[$CellContext`\[Nu]$$], 1}, 0.7, 1.2}, {
       Hold[$CellContext`\[Gamma]$$], 1.5, 2}}, Typeset`size$$ = {
-    396.00000000000006`, {124., 130.17488978743341`}}, Typeset`update$$ = 0, 
+    396.00000000000006`, {126., 131.57407672555786`}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
     True, $CellContext`TC$39644$$ = False, $CellContext`\[Nu]$39645$$ = 
     0, $CellContext`\[Gamma]$39646$$ = 0}, 
@@ -1180,7 +1183,7 @@ $CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]},
           3}, "\[Nu]" -> {{$CellContext`\[Nu]$$, 1}, 0.7, 1.2}, 
         "\[Gamma]" -> {$CellContext`\[Gamma]$$, 1.5, 2}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{708., {157.84743648138829`, 164.15256351861171`}},
+     ImageSizeCache->{708., {158.84743648138829`, 165.15256351861171`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1209,7 +1212,7 @@ $CellContext`\[Nu]$$ = 1, Typeset`show$$ = True, Typeset`bookmarkList$$ = {},
       Hold[$CellContext`TC$$], 2, 3}, {
       Hold[$CellContext`\[Nu]$$], 0.7, 1.2}, {
       Hold[$CellContext`\[Gamma]$$], -2, 0}}, Typeset`size$$ = {
-    396.00000000000006`, {120., 124.90329929714937`}}, Typeset`update$$ = 0, 
+    396.00000000000006`, {126., 131.57407672555786`}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
     True, $CellContext`TC$32249$$ = False, $CellContext`\[Nu]$32250$$ = 
     0, $CellContext`\[Gamma]$32251$$ = 0}, 
@@ -1245,7 +1248,7 @@ $CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]},
         "\[Nu]" -> {$CellContext`\[Nu]$$, 0.7, 1.2}, 
         "\[Gamma]" -> {$CellContext`\[Gamma]$$, -2, 0}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{708., {152.84743648138829`, 159.15256351861171`}},
+     ImageSizeCache->{708., {158.84743648138829`, 165.15256351861171`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1271,7 +1274,7 @@ Cell[BoxData[
        Hold[$CellContext`TC$$], 2.27}, 2, 3}, {{
        Hold[$CellContext`\[Nu]$$], 1}, 0.7, 1.2}, {
       Hold[$CellContext`\[Gamma]$$], -2, 0}}, Typeset`size$$ = {
-    396.00000000000006`, {119., 123.94905677503539`}}, Typeset`update$$ = 0, 
+    396.00000000000006`, {126., 131.57407672555786`}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
     True, $CellContext`TC$33293$$ = False, $CellContext`\[Nu]$33294$$ = 
     0, $CellContext`\[Gamma]$33295$$ = 0}, 
@@ -1307,7 +1310,7 @@ $CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]},
           3}, "\[Nu]" -> {{$CellContext`\[Nu]$$, 1}, 0.7, 1.2}, 
         "\[Gamma]" -> {$CellContext`\[Gamma]$$, -2, 0}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{708., {151.84743648138829`, 158.15256351861171`}},
+     ImageSizeCache->{708., {158.84743648138829`, 165.15256351861171`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1329,11 +1332,12 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{
    RowBox[{"SetDirectory", "[", 
-    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], "\n", 
+    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], 
+  "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{
    "IMPORTAR", " ", "ARCHIVOS", " ", "Y", " ", "EXTRAER", " ", "T", " ", "Y", 
-    " ", "SUS"}], "*)"}]}], "\[IndentingNewLine]", 
+    " ", "SUS"}], "*)"}]}], "\n", 
  RowBox[{
   RowBox[{"DataL10", "=", 
    RowBox[{"Import", "[", 
@@ -1527,15 +1531,16 @@ Cell[BoxData[{
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`TC$$ = 2.27, $CellContext`\[Gamma]$$ = 
-    2.0460000000000003`, $CellContext`\[Nu]$$ = 1, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`TC$$ = 
+    2.270000000000073, $CellContext`\[Gamma]$$ = 
+    2.045999999999998, $CellContext`\[Nu]$$ = 1, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
       Hold[$CellContext`TC$$], 2, 3}, {
       Hold[$CellContext`\[Nu]$$], 0.7, 1.2}, {
       Hold[$CellContext`\[Gamma]$$], 1.5, 2.5}}, Typeset`size$$ = {
-    396.00000000000006`, {124., 130.21863168130258`}}, Typeset`update$$ = 0, 
+    396.00000000000006`, {126., 131.57407672555786`}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
     True, $CellContext`TC$50261$$ = False, $CellContext`\[Nu]$50262$$ = 
     0, $CellContext`\[Gamma]$50263$$ = 0}, 
@@ -1568,7 +1573,7 @@ $CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]},
         "\[Nu]" -> {$CellContext`\[Nu]$$, 0.7, 1.2}, 
         "\[Gamma]" -> {$CellContext`\[Gamma]$$, 1.5, 2.5}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{708., {157.84743648138829`, 164.15256351861171`}},
+     ImageSizeCache->{708., {158.84743648138829`, 165.15256351861171`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1579,7 +1584,8 @@ $CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]},
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{{3.892559339359558*^9, 3.8925593425378604`*^9}},
+ CellChangeTimes->{{3.892559339359558*^9, 3.8925593425378604`*^9}, {
+   3.8926384959490356`*^9, 3.892638496750955*^9}, 3.89264531127547*^9},
  CellLabel->
   "Out[542]=",ExpressionUUID->"c6602ccf-cc4b-490b-8c39-8e4200a1aa68"]
 }, Open  ]],
@@ -1597,7 +1603,7 @@ Cell[BoxData[
       Hold[$CellContext`TC$$], 2, 3}, {
       Hold[$CellContext`\[Nu]$$], 0.7, 1.2}, {
       Hold[$CellContext`\[Gamma]$$], 1.5, 2.5}}, Typeset`size$$ = {
-    396.00000000000006`, {124., 130.17488978743347`}}, Typeset`update$$ = 0, 
+    396.00000000000006`, {126., 131.57407672555786`}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
     True, $CellContext`TC$48611$$ = False, $CellContext`\[Nu]$48612$$ = 
     0, $CellContext`\[Gamma]$48613$$ = 0}, 
@@ -1630,7 +1636,7 @@ $CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]},
         "\[Nu]" -> {$CellContext`\[Nu]$$, 0.7, 1.2}, 
         "\[Gamma]" -> {$CellContext`\[Gamma]$$, 1.5, 2.5}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{708., {157.84743648138829`, 164.15256351861171`}},
+     ImageSizeCache->{708., {158.84743648138829`, 165.15256351861171`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1656,7 +1662,7 @@ Cell[BoxData[
        Hold[$CellContext`TC$$], 2.27}, 2, 3}, {{
        Hold[$CellContext`\[Nu]$$], 1}, 0.7, 1.2}, {
       Hold[$CellContext`\[Gamma]$$], 1.5, 2.5}}, Typeset`size$$ = {
-    396.00000000000006`, {124., 130.17488978743347`}}, Typeset`update$$ = 0, 
+    396.00000000000006`, {126., 131.57407672555786`}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
     True, $CellContext`TC$49655$$ = False, $CellContext`\[Nu]$49656$$ = 
     0, $CellContext`\[Gamma]$49657$$ = 0}, 
@@ -1689,7 +1695,7 @@ $CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]},
           3}, "\[Nu]" -> {{$CellContext`\[Nu]$$, 1}, 0.7, 1.2}, 
         "\[Gamma]" -> {$CellContext`\[Gamma]$$, 1.5, 2.5}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{708., {157.84743648138829`, 164.15256351861171`}},
+     ImageSizeCache->{708., {158.84743648138829`, 165.15256351861171`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1700,7 +1706,8 @@ $CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]},
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{{3.89255932480569*^9, 3.892559331017523*^9}},
+ CellChangeTimes->{{3.89255932480569*^9, 3.892559331017523*^9}, 
+   3.8926385726952677`*^9},
  CellLabel->
   "Out[522]=",ExpressionUUID->"00ae6637-ae21-4c5f-977e-385e4367d6bb"]
 }, Open  ]],
@@ -1711,11 +1718,12 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{
    RowBox[{"SetDirectory", "[", 
-    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], "\n", 
+    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], 
+  "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{
    "IMPORTAR", " ", "ARCHIVOS", " ", "Y", " ", "EXTRAER", " ", "T", " ", "Y", 
-    " ", "SUS"}], "*)"}]}], "\[IndentingNewLine]", 
+    " ", "SUS"}], "*)"}]}], "\n", 
  RowBox[{
   RowBox[{"DataL10", "=", 
    RowBox[{"Import", "[", 
@@ -1813,8 +1821,11 @@ Cell[BoxData[{
    RowBox[{
     SuperscriptBox["L", 
      FractionBox["1", "\[Nu]"]], " ", 
-    FractionBox[
-     RowBox[{"T", "-", "TC"}], "TC"]}]}], ";"}], "\[IndentingNewLine]", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"T", "-", "TC"}], ")"}], "/", "TC"}], ")"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{
@@ -1904,31 +1915,30 @@ Cell[BoxData[{
     RowBox[{"{", 
      RowBox[{"\[Gamma]", ",", "0", ",", "0.5"}], "}"}]}]}], "]"}]}], "Input",
  CellChangeTimes->{{3.8925594057965717`*^9, 3.892559466193454*^9}},
- CellLabel->
-  "In[583]:=",ExpressionUUID->"ec575ad5-6521-4fa9-ba2d-c4414438e18b"],
+ CellLabel->"In[1]:=",ExpressionUUID->"ec575ad5-6521-4fa9-ba2d-c4414438e18b"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`TC$$ = 2.27, $CellContext`\[Gamma]$$ = 
-    0.301, $CellContext`\[Nu]$$ = 1, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`TC$$ = 2.263, $CellContext`\[Gamma]$$ = 
+    0.301, $CellContext`\[Nu]$$ = 0.992, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
       Hold[$CellContext`TC$$], 2, 3}, {
       Hold[$CellContext`\[Nu]$$], 0.7, 1.2}, {
       Hold[$CellContext`\[Gamma]$$], 0, 0.5}}, Typeset`size$$ = {
-    396.00000000000006`, {127., 132.3162453090922}}, Typeset`update$$ = 0, 
+    396.00000000000006`, {128., 132.8723577622863}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`TC$59580$$ = False, $CellContext`\[Nu]$59581$$ = 
-    0, $CellContext`\[Gamma]$59582$$ = 0}, 
+    True, $CellContext`TC$8962$$ = False, $CellContext`\[Nu]$8963$$ = 
+    0, $CellContext`\[Gamma]$8964$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`TC$$ = 2, $CellContext`\[Gamma]$$ = 
         0, $CellContext`\[Nu]$$ = 0.7}, "ControllerVariables" :> {
-        Hold[$CellContext`TC$$, $CellContext`TC$59580$$, False], 
-        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$59581$$, 0], 
-        Hold[$CellContext`\[Gamma]$$, $CellContext`\[Gamma]$59582$$, 0]}, 
+        Hold[$CellContext`TC$$, $CellContext`TC$8962$$, False], 
+        Hold[$CellContext`\[Nu]$$, $CellContext`\[Nu]$8963$$, 0], 
+        Hold[$CellContext`\[Gamma]$$, $CellContext`\[Gamma]$8964$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1952,7 +1962,7 @@ $CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]},
         "\[Nu]" -> {$CellContext`\[Nu]$$, 0.7, 1.2}, 
         "\[Gamma]" -> {$CellContext`\[Gamma]$$, 0, 0.5}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{708., {159.84743648138829`, 166.15256351861171`}},
+     ImageSizeCache->{710., {161.84743648138829`, 168.15256351861171`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1963,13 +1973,14 @@ $CellContext`\[Gamma]$$, $CellContext`T50, $CellContext`Sus50, 50]},
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{{3.892559425641903*^9, 3.8925594728879375`*^9}},
- CellLabel->
-  "Out[602]=",ExpressionUUID->"a5f306b2-af49-48be-9391-7c9ac5d32ea8"]
+ CellChangeTimes->{{3.892559425641903*^9, 3.8925594728879375`*^9}, {
+  3.8926385160617323`*^9, 3.892638517684864*^9}, {3.8926459222425356`*^9, 
+  3.8926459268173246`*^9}},
+ CellLabel->"Out[20]=",ExpressionUUID->"a0417935-1daf-416f-94b4-34f665fd0a31"]
 }, Open  ]]
 },
-WindowSize->{949, 497},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowSize->{1440., 777.75},
+WindowMargins->{{Automatic, -4}, {Automatic, -6}},
 Magnification:>1.1 Inherited,
 FrontEndVersion->"12.3 para Microsoft Windows (64-bit) (July 9, 2021)",
 StyleDefinitions->"Default.nb",
@@ -1986,43 +1997,43 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 8581, 216, 1091, "Input",ExpressionUUID->"66ecde10-4f3b-4dc3-a046-0444deb14d0b"],
+Cell[558, 20, 8584, 217, 1091, "Input",ExpressionUUID->"66ecde10-4f3b-4dc3-a046-0444deb14d0b"],
 Cell[CellGroupData[{
-Cell[9164, 240, 3233, 60, 340, InheritFromParent,ExpressionUUID->"f274d2e9-7b79-495a-be0f-47c00c425434"],
-Cell[12400, 302, 3290, 60, 344, "Output",ExpressionUUID->"dd20038e-24a0-4dd8-a9c3-f62d456c3bf8"]
+Cell[9167, 241, 3338, 62, 340, "Input",ExpressionUUID->"f274d2e9-7b79-495a-be0f-47c00c425434"],
+Cell[12508, 305, 3290, 60, 344, "Output",ExpressionUUID->"dd20038e-24a0-4dd8-a9c3-f62d456c3bf8"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[15727, 367, 6653, 184, 971, "Input",ExpressionUUID->"2fd8cf15-9aa4-438b-9cf6-4f0f068c17e3"],
-Cell[22383, 553, 2799, 51, 342, "Output",ExpressionUUID->"a0a37388-5fa4-4d8e-8be7-d241d37deb32"]
+Cell[15835, 370, 6650, 183, 971, "Input",ExpressionUUID->"2fd8cf15-9aa4-438b-9cf6-4f0f068c17e3"],
+Cell[22488, 555, 2801, 51, 342, "Output",ExpressionUUID->"a0a37388-5fa4-4d8e-8be7-d241d37deb32"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[25219, 609, 1886, 43, 230, "Input",ExpressionUUID->"ce68bbbb-000f-4398-8db7-f6a7abf7c43b"],
-Cell[27108, 654, 4586, 94, 286, "Output",ExpressionUUID->"28bf28db-286f-4219-9dec-f792d2602f19"]
+Cell[25326, 611, 1886, 43, 230, "Input",ExpressionUUID->"ce68bbbb-000f-4398-8db7-f6a7abf7c43b"],
+Cell[27215, 656, 4586, 94, 286, "Output",ExpressionUUID->"28bf28db-286f-4219-9dec-f792d2602f19"]
 }, Open  ]],
-Cell[31709, 751, 7452, 199, 1091, "Input",ExpressionUUID->"28323e13-e401-4039-801d-1ca23aeb500d"],
+Cell[31816, 753, 7452, 199, 1091, "Input",ExpressionUUID->"28323e13-e401-4039-801d-1ca23aeb500d"],
 Cell[CellGroupData[{
-Cell[39186, 954, 3183, 57, 338, InheritFromParent,ExpressionUUID->"08989c23-0cc7-4bf4-9455-211116ae6fd0"],
-Cell[42372, 1013, 3232, 57, 342, "Output",ExpressionUUID->"8d11015b-c394-41a0-af38-800e58f5ca77"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[45641, 1075, 3226, 59, 338, InheritFromParent,ExpressionUUID->"2bc17c0b-933e-4b7c-b60b-bd01938f18c0"],
-Cell[48870, 1136, 3258, 59, 342, "Output",ExpressionUUID->"ce46aba4-0b42-4e77-b273-a67592e353e3"]
+Cell[39293, 956, 3248, 58, 340, "Input",ExpressionUUID->"08989c23-0cc7-4bf4-9455-211116ae6fd0"],
+Cell[42544, 1016, 3232, 57, 344, "Output",ExpressionUUID->"8d11015b-c394-41a0-af38-800e58f5ca77"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[52165, 1200, 3243, 60, 328, InheritFromParent,ExpressionUUID->"fbbbedba-840d-49ec-9ea3-d0af9ce3075d"],
-Cell[55411, 1262, 3283, 60, 330, "Output",ExpressionUUID->"cb93a1c8-4ed1-4587-8abf-4d901d3f76c0"]
+Cell[45813, 1078, 3226, 59, 340, "Input",ExpressionUUID->"2bc17c0b-933e-4b7c-b60b-bd01938f18c0"],
+Cell[49042, 1139, 3258, 59, 344, "Output",ExpressionUUID->"ce46aba4-0b42-4e77-b273-a67592e353e3"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[58731, 1327, 7330, 197, 1091, "Input",ExpressionUUID->"adfd7a4b-c9c3-4c7a-882d-acef71ae4018"],
-Cell[66064, 1526, 3228, 57, 363, "Output",ExpressionUUID->"c6602ccf-cc4b-490b-8c39-8e4200a1aa68"]
+Cell[52337, 1203, 3243, 60, 340, "Input",ExpressionUUID->"fbbbedba-840d-49ec-9ea3-d0af9ce3075d"],
+Cell[55583, 1265, 3283, 60, 344, "Output",ExpressionUUID->"cb93a1c8-4ed1-4587-8abf-4d901d3f76c0"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[69329, 1588, 3187, 57, 338, InheritFromParent,ExpressionUUID->"869d9b0d-edb0-4eaf-b73e-4391f98ff76f"],
-Cell[72519, 1647, 3240, 57, 342, "Output",ExpressionUUID->"00ae6637-ae21-4c5f-977e-385e4367d6bb"]
+Cell[58903, 1330, 7333, 198, 1091, "Input",ExpressionUUID->"adfd7a4b-c9c3-4c7a-882d-acef71ae4018"],
+Cell[66239, 1530, 3317, 59, 344, "Output",ExpressionUUID->"c6602ccf-cc4b-490b-8c39-8e4200a1aa68"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[75796, 1709, 7350, 198, 1091, "Input",ExpressionUUID->"ec575ad5-6521-4fa9-ba2d-c4414438e18b"],
-Cell[83149, 1909, 3228, 58, 346, "Output",ExpressionUUID->"a5f306b2-af49-48be-9391-7c9ac5d32ea8"]
+Cell[69593, 1594, 3187, 57, 340, "Input",ExpressionUUID->"869d9b0d-edb0-4eaf-b73e-4391f98ff76f"],
+Cell[72783, 1653, 3268, 58, 344, "Output",ExpressionUUID->"00ae6637-ae21-4c5f-977e-385e4367d6bb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[76088, 1716, 7408, 201, 1020, "Input",ExpressionUUID->"ec575ad5-6521-4fa9-ba2d-c4414438e18b"],
+Cell[83499, 1919, 3327, 59, 372, "Output",ExpressionUUID->"a0417935-1daf-416f-94b4-34f665fd0a31"]
 }, Open  ]]
 }
 ]
